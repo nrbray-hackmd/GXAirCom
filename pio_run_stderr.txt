@@ -1,0 +1,336 @@
+src/main.cpp: In function 'void taskWeather(void*)':
+src/main.cpp:2973:20: warning: unused variable 'xDelay' [-Wunused-variable]
+   const TickType_t xDelay = 10 / portTICK_PERIOD_MS;   //only every 10ms.
+                    ^
+src/main.cpp:2974:14: warning: unused variable 'xLastWakeTime' [-Wunused-variable]
+   TickType_t xLastWakeTime = xTaskGetTickCount (); //get actual tick-count
+              ^
+.pio/libdeps/psRam/OneWire/OneWire.cpp:599:22: warning: extra tokens at end of #undef directive
+ #  undef noInterrupts() {portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;portENTER_CRITICAL(&mux)
+                      ^
+.pio/libdeps/psRam/OneWire/OneWire.cpp:600:20: warning: extra tokens at end of #undef directive
+ #  undef interrupts() portEXIT_CRITICAL(&mux);}
+                    ^
+.pio/libdeps/psRam/WebSockets/src/WebSocketsServer.cpp: In member function 'WSclient_t* WebSocketsServerCore::handleNewClient(WiFiClient*)':
+.pio/libdeps/psRam/WebSockets/src/WebSocketsServer.cpp:634:12: warning: function may return address of local variable [-Wreturn-local-addr]
+     return client;
+            ^
+.pio/libdeps/psRam/WebSockets/src/WebSocketsServer.cpp:626:20: note: declared here
+         WSclient_t dummy = WSclient_t();
+                    ^
+lib/ArduinoHttpClient-master/src/HttpClient.cpp: In member function 'int HttpClient::startRequest(const char*, const char*, const char*, int, const byte*)':
+lib/ArduinoHttpClient-master/src/HttpClient.cpp:87:61: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+             if (!iClient->connect(iServerName, iServerPort) > 0)
+                                                             ^
+lib/ArduinoHttpClient-master/src/HttpClient.cpp:97:64: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+             if (!iClient->connect(iServerAddress, iServerPort) > 0)
+                                                                ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:74:0: warning: "strcpy_P" redefined
+         #define strcpy_P(dest, src) strcpy((dest), (src))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:73:0: note: this is the location of the previous definition
+ #define strcpy_P      strcpy
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:75:0: warning: "strcat_P" redefined
+         #define strcat_P(dest, src) strcat((dest), (src))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:75:0: note: this is the location of the previous definition
+ #define strcat_P      strcat
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:76:0: warning: "strcmp_P" redefined
+         #define strcmp_P(a, b) strcmp((a), (b))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:77:0: note: this is the location of the previous definition
+ #define strcmp_P      strcmp
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:79:0: warning: "pgm_read_word" redefined
+         #define pgm_read_word(addr) (*(const unsigned short *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:39:0: note: this is the location of the previous definition
+ #define pgm_read_word(addr) ({ \
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:80:0: warning: "pgm_read_dword" redefined
+         #define pgm_read_dword(addr) (*(const unsigned long *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:43:0: note: this is the location of the previous definition
+ #define pgm_read_dword(addr) ({ \
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:81:0: warning: "pgm_read_float" redefined
+         #define pgm_read_float(addr) (*(const float *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:47:0: note: this is the location of the previous definition
+ #define pgm_read_float(addr) ({ \
+ ^
+lib/FANETLORA/radio/LoRa.cpp: In member function 'int16_t LoRaClass::transmit(uint8_t*, size_t)':
+lib/FANETLORA/radio/LoRa.cpp:1760:20: warning: unused variable 'tSend' [-Wunused-variable]
+           uint32_t tSend = GxModule::micros() - start;
+                    ^
+lib/Weather/PeetBros.cpp: In function 'void peetBrosRun()':
+lib/Weather/PeetBros.cpp:119:8: warning: variable '_newData' set but not used [-Wunused-but-set-variable]
+   bool _newData;
+        ^
+lib/Weather/Weather.cpp: In member function 'void Weather::run()':
+lib/Weather/Weather.cpp:403:15: warning: unused variable 'ret' [-Wunused-variable]
+       uint8_t ret = peetBrosgetNewData(&_weather.WindDir,&_weather.WindSpeed);
+               ^
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c: In function 'spiTransferBytesNL':
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c:922:39: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+                 uint8_t * last_out8 = &result[c_longs-1];
+                                       ^
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c:923:40: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+                 uint8_t * last_data8 = &last_data;
+                                        ^
+src/main.cpp: In function 'void taskWeather(void*)':
+src/main.cpp:2973:20: warning: unused variable 'xDelay' [-Wunused-variable]
+   const TickType_t xDelay = 10 / portTICK_PERIOD_MS;   //only every 10ms.
+                    ^
+src/main.cpp:2974:14: warning: unused variable 'xLastWakeTime' [-Wunused-variable]
+   TickType_t xLastWakeTime = xTaskGetTickCount (); //get actual tick-count
+              ^
+.pio/libdeps/nopsRam/OneWire/OneWire.cpp:599:22: warning: extra tokens at end of #undef directive
+ #  undef noInterrupts() {portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;portENTER_CRITICAL(&mux)
+                      ^
+.pio/libdeps/nopsRam/OneWire/OneWire.cpp:600:20: warning: extra tokens at end of #undef directive
+ #  undef interrupts() portEXIT_CRITICAL(&mux);}
+                    ^
+.pio/libdeps/nopsRam/WebSockets/src/WebSocketsServer.cpp: In member function 'WSclient_t* WebSocketsServerCore::handleNewClient(WiFiClient*)':
+.pio/libdeps/nopsRam/WebSockets/src/WebSocketsServer.cpp:634:12: warning: function may return address of local variable [-Wreturn-local-addr]
+     return client;
+            ^
+.pio/libdeps/nopsRam/WebSockets/src/WebSocketsServer.cpp:626:20: note: declared here
+         WSclient_t dummy = WSclient_t();
+                    ^
+lib/ArduinoHttpClient-master/src/HttpClient.cpp: In member function 'int HttpClient::startRequest(const char*, const char*, const char*, int, const byte*)':
+lib/ArduinoHttpClient-master/src/HttpClient.cpp:87:61: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+             if (!iClient->connect(iServerName, iServerPort) > 0)
+                                                             ^
+lib/ArduinoHttpClient-master/src/HttpClient.cpp:97:64: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+             if (!iClient->connect(iServerAddress, iServerPort) > 0)
+                                                                ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:74:0: warning: "strcpy_P" redefined
+         #define strcpy_P(dest, src) strcpy((dest), (src))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:73:0: note: this is the location of the previous definition
+ #define strcpy_P      strcpy
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:75:0: warning: "strcat_P" redefined
+         #define strcat_P(dest, src) strcat((dest), (src))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:75:0: note: this is the location of the previous definition
+ #define strcat_P      strcat
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:76:0: warning: "strcmp_P" redefined
+         #define strcmp_P(a, b) strcmp((a), (b))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:77:0: note: this is the location of the previous definition
+ #define strcmp_P      strcmp
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:79:0: warning: "pgm_read_word" redefined
+         #define pgm_read_word(addr) (*(const unsigned short *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:39:0: note: this is the location of the previous definition
+ #define pgm_read_word(addr) ({ \
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:80:0: warning: "pgm_read_dword" redefined
+         #define pgm_read_dword(addr) (*(const unsigned long *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:43:0: note: this is the location of the previous definition
+ #define pgm_read_dword(addr) ({ \
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:81:0: warning: "pgm_read_float" redefined
+         #define pgm_read_float(addr) (*(const float *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:47:0: note: this is the location of the previous definition
+ #define pgm_read_float(addr) ({ \
+ ^
+lib/FANETLORA/radio/LoRa.cpp: In member function 'int16_t LoRaClass::transmit(uint8_t*, size_t)':
+lib/FANETLORA/radio/LoRa.cpp:1760:20: warning: unused variable 'tSend' [-Wunused-variable]
+           uint32_t tSend = GxModule::micros() - start;
+                    ^
+lib/Weather/PeetBros.cpp: In function 'void peetBrosRun()':
+lib/Weather/PeetBros.cpp:119:8: warning: variable '_newData' set but not used [-Wunused-but-set-variable]
+   bool _newData;
+        ^
+lib/Weather/Weather.cpp: In member function 'void Weather::run()':
+lib/Weather/Weather.cpp:403:15: warning: unused variable 'ret' [-Wunused-variable]
+       uint8_t ret = peetBrosgetNewData(&_weather.WindDir,&_weather.WindSpeed);
+               ^
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c: In function 'spiTransferBytesNL':
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c:922:39: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+                 uint8_t * last_out8 = &result[c_longs-1];
+                                       ^
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c:923:40: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+                 uint8_t * last_data8 = &last_data;
+                                        ^
+src/main.cpp: In function 'void taskWeather(void*)':
+src/main.cpp:2973:20: warning: unused variable 'xDelay' [-Wunused-variable]
+   const TickType_t xDelay = 10 / portTICK_PERIOD_MS;   //only every 10ms.
+                    ^
+src/main.cpp:2974:14: warning: unused variable 'xLastWakeTime' [-Wunused-variable]
+   TickType_t xLastWakeTime = xTaskGetTickCount (); //get actual tick-count
+              ^
+.pio/libdeps/sim7000_psRam/OneWire/OneWire.cpp:599:22: warning: extra tokens at end of #undef directive
+ #  undef noInterrupts() {portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;portENTER_CRITICAL(&mux)
+                      ^
+.pio/libdeps/sim7000_psRam/OneWire/OneWire.cpp:600:20: warning: extra tokens at end of #undef directive
+ #  undef interrupts() portEXIT_CRITICAL(&mux);}
+                    ^
+.pio/libdeps/sim7000_psRam/WebSockets/src/WebSocketsServer.cpp: In member function 'WSclient_t* WebSocketsServerCore::handleNewClient(WiFiClient*)':
+.pio/libdeps/sim7000_psRam/WebSockets/src/WebSocketsServer.cpp:634:12: warning: function may return address of local variable [-Wreturn-local-addr]
+     return client;
+            ^
+.pio/libdeps/sim7000_psRam/WebSockets/src/WebSocketsServer.cpp:626:20: note: declared here
+         WSclient_t dummy = WSclient_t();
+                    ^
+lib/ArduinoHttpClient-master/src/HttpClient.cpp: In member function 'int HttpClient::startRequest(const char*, const char*, const char*, int, const byte*)':
+lib/ArduinoHttpClient-master/src/HttpClient.cpp:87:61: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+             if (!iClient->connect(iServerName, iServerPort) > 0)
+                                                             ^
+lib/ArduinoHttpClient-master/src/HttpClient.cpp:97:64: warning: logical not is only applied to the left hand side of comparison [-Wlogical-not-parentheses]
+             if (!iClient->connect(iServerAddress, iServerPort) > 0)
+                                                                ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:74:0: warning: "strcpy_P" redefined
+         #define strcpy_P(dest, src) strcpy((dest), (src))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:73:0: note: this is the location of the previous definition
+ #define strcpy_P      strcpy
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:75:0: warning: "strcat_P" redefined
+         #define strcat_P(dest, src) strcat((dest), (src))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:75:0: note: this is the location of the previous definition
+ #define strcat_P      strcat
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:76:0: warning: "strcmp_P" redefined
+         #define strcmp_P(a, b) strcmp((a), (b))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:77:0: note: this is the location of the previous definition
+ #define strcmp_P      strcmp
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:79:0: warning: "pgm_read_word" redefined
+         #define pgm_read_word(addr) (*(const unsigned short *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:39:0: note: this is the location of the previous definition
+ #define pgm_read_word(addr) ({ \
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:80:0: warning: "pgm_read_dword" redefined
+         #define pgm_read_dword(addr) (*(const unsigned long *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:43:0: note: this is the location of the previous definition
+ #define pgm_read_dword(addr) ({ \
+ ^
+In file included from lib/Baro/Baro.cpp:4:0:
+lib/MPU6050/MPU6050_6Axis_MotionApps_V6_12.h:81:0: warning: "pgm_read_float" redefined
+         #define pgm_read_float(addr) (*(const float *)(addr))
+ ^
+In file included from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/WString.h:29:0,
+                 from /home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/Arduino.h:146,
+                 from lib/Baro/Baro.h:13,
+                 from lib/Baro/Baro.cpp:1:
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/pgmspace.h:47:0: note: this is the location of the previous definition
+ #define pgm_read_float(addr) ({ \
+ ^
+lib/FANETLORA/radio/LoRa.cpp: In member function 'int16_t LoRaClass::transmit(uint8_t*, size_t)':
+lib/FANETLORA/radio/LoRa.cpp:1760:20: warning: unused variable 'tSend' [-Wunused-variable]
+           uint32_t tSend = GxModule::micros() - start;
+                    ^
+lib/Weather/PeetBros.cpp: In function 'void peetBrosRun()':
+lib/Weather/PeetBros.cpp:119:8: warning: variable '_newData' set but not used [-Wunused-but-set-variable]
+   bool _newData;
+        ^
+lib/Weather/Weather.cpp: In member function 'void Weather::run()':
+lib/Weather/Weather.cpp:403:15: warning: unused variable 'ret' [-Wunused-variable]
+       uint8_t ret = peetBrosgetNewData(&_weather.WindDir,&_weather.WindSpeed);
+               ^
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c: In function 'spiTransferBytesNL':
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c:922:39: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+                 uint8_t * last_out8 = &result[c_longs-1];
+                                       ^
+/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/cores/esp32/esp32-hal-spi.c:923:40: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+                 uint8_t * last_data8 = &last_data;
+                                        ^

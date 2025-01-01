@@ -1,0 +1,2220 @@
+Processing psRam (framework: arduino; board: esp32dev; platform: espressif32@3.4.0)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (3.4.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (esp-prog) External (esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.10006.210326 (1.0.6) 
+ - tool-esptoolpy @ 1.30100.210531 (3.1.0) 
+ - toolchain-xtensa32 @ 2.50200.97 (5.2.0)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 78 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 1.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD(esp32) @ 1.0.5
+|-- SPI @ 1.0
+|-- SPIFFS @ 1.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 1.0
+|-- Windy
+|-- Wire @ 1.0.1
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 1.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 1.0
+|-- Preferences @ 1.0
+|-- ESP32 BLE Arduino @ 1.0.1
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Compiling .pio/build/psRam/src/Logger.cpp.o
+Compiling .pio/build/psRam/src/Screen.cpp.o
+Compiling .pio/build/psRam/src/WebHelper.cpp.o
+Compiling .pio/build/psRam/src/fileOps.cpp.o
+Compiling .pio/build/psRam/src/main.cpp.o
+Compiling .pio/build/psRam/src/oled.cpp.o
+Generating partitions .pio/build/psRam/partitions.bin
+copy_file([".pio/build/psRam/partitions.bin"], ["/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/tools/partitions/min_spiffs.csv"])
+Copying file output to project directory...
+partitions.bin
+psRam
+build
+v7.1.0
+********  copy file .pio/build/psRam/partitions.bin to bin/psRam/v7.1.0/partitions.bin *******
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLE2904.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEAddress.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEAdvertisedDevice.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEAdvertising.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEBeacon.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLECharacteristic.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEClient.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEDescriptor.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEDevice.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEEddystoneTLM.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEEddystoneURL.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEExtAdvertising.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEHIDDevice.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLERemoteCharacteristic.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLERemoteDescriptor.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLERemoteService.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEScan.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLESecurity.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEServer.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEService.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEUUID.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/NimBLEUtils.cpp.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/esp_port/esp-hci/src/esp_nimble_hci.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/esp_port/port/src/esp_nimble_mem.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/aes_decrypt.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/aes_encrypt.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/cbc_mode.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/ccm_mode.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/cmac_mode.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/ctr_mode.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/ctr_prng.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_dh.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_dsa.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_platform_specific.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/hmac.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/hmac_prng.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/sha256.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/ext/tinycrypt/src/utils.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_adv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_conn.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_conn_hci.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_ctrl.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_dtm.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_hci.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_hci_ev.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_iso.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_rand.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_resolv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_rfmgmt.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_scan.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_sched.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_supp_cmd.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_sync.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_trace.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_utils.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_whitelist.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/drivers/nrf51/src/ble_hw.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/drivers/nrf51/src/ble_phy.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_hw.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_phy.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_phy_trace.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/access.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/adv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/aes-ccm.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/app_keys.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/beacon.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/cdb.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg_cli.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg_srv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/crypto.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/friend.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/glue.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/health_cli.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/health_srv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/heartbeat.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/light_model.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/lpn.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/mesh.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/model_cli.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/model_srv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/net.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/nodes.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/pb_adv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/pb_gatt.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/prov.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/prov_device.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/provisioner.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/proxy.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/rpl.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/settings.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/shell.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/subnet.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/mesh/src/transport.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/ans/src/ble_svc_ans.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/bas/src/ble_svc_bas.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/dis/src/ble_svc_dis.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/gap/src/ble_svc_gap.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/gatt/src/ble_svc_gatt.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/ias/src/ble_svc_ias.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/ipss/src/ble_svc_ipss.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/services/lls/src/ble_svc_lls.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_att.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_att_clt.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_att_cmd.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_att_svr.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_eddystone.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_gap.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_gattc.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_gatts.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_gatts_lcl.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_adv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_atomic.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_cfg.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_conn.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_flow.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_cmd.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_evt.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_util.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_id.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_log.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_mbuf.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_misc.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_mqueue.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_periodic_sync.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_pvcy.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_resolv.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_shutdown.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_startup.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_stop.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_ibeacon.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_coc.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_sig.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_sig_cmd.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_monitor.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_sm.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_alg.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_cmd.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_lgcy.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_sc.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_store.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_store_util.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/src/ble_uuid.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_config.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_config_conf.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_nvs.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/host/util/src/addr.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/nimble/transport/ram/src/ble_hci_ram.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/endian.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/hal_timer.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/hal_uart.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/mem.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/nimble_port.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/os_cputime.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/os_cputime_pwr2.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/os_mbuf.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/os_mempool.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/nimble/src/os_msys_init.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/npl/freertos/src/nimble_port_freertos.c.o
+Compiling .pio/build/psRam/libed2/NimBLE-Arduino/nimble/porting/npl/freertos/src/npl_os_freertos.c.o
+Compiling .pio/build/psRam/lib4a2/OneWire/OneWire.cpp.o
+Compiling .pio/build/psRam/libe1b/Wire/Wire.cpp.o
+Compiling .pio/build/psRam/lib85c/SPI/SPI.cpp.o
+Archiving .pio/build/psRam/libed2/libNimBLE-Arduino.a
+Archiving .pio/build/psRam/lib85c/libSPI.a
+Indexing .pio/build/psRam/lib85c/libSPI.a
+Compiling .pio/build/psRam/libcf5/Adafruit BusIO/Adafruit_BusIO_Register.cpp.o
+Indexing .pio/build/psRam/libed2/libNimBLE-Arduino.a
+Archiving .pio/build/psRam/lib4a2/libOneWire.a
+Archiving .pio/build/psRam/libe1b/libWire.a
+Compiling .pio/build/psRam/libcf5/Adafruit BusIO/Adafruit_I2CDevice.cpp.o
+Indexing .pio/build/psRam/libe1b/libWire.a
+Indexing .pio/build/psRam/lib4a2/libOneWire.a
+Compiling .pio/build/psRam/libcf5/Adafruit BusIO/Adafruit_SPIDevice.cpp.o
+Compiling .pio/build/psRam/libff2/Adafruit GFX Library/Adafruit_GFX.cpp.o
+Compiling .pio/build/psRam/libff2/Adafruit GFX Library/Adafruit_GrayOLED.cpp.o
+Compiling .pio/build/psRam/libff2/Adafruit GFX Library/Adafruit_SPITFT.cpp.o
+Archiving .pio/build/psRam/libcf5/libAdafruit BusIO.a
+Indexing .pio/build/psRam/libcf5/libAdafruit BusIO.a
+Compiling .pio/build/psRam/libff2/Adafruit GFX Library/glcdfont.c.o
+Compiling .pio/build/psRam/libd00/RTClib/RTC_DS1307.cpp.o
+Compiling .pio/build/psRam/libd00/RTClib/RTC_DS3231.cpp.o
+Compiling .pio/build/psRam/libd00/RTClib/RTC_Micros.cpp.o
+Archiving .pio/build/psRam/libff2/libAdafruit GFX Library.a
+Indexing .pio/build/psRam/libff2/libAdafruit GFX Library.a
+Compiling .pio/build/psRam/libd00/RTClib/RTC_Millis.cpp.o
+Compiling .pio/build/psRam/libd00/RTClib/RTC_PCF8523.cpp.o
+Compiling .pio/build/psRam/libd00/RTClib/RTC_PCF8563.cpp.o
+Compiling .pio/build/psRam/libd00/RTClib/RTClib.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/ETH.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFi.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFiAP.cpp.o
+Archiving .pio/build/psRam/libd00/libRTClib.a
+Indexing .pio/build/psRam/libd00/libRTClib.a
+Compiling .pio/build/psRam/lib635/WiFi/WiFiClient.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFiGeneric.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFiMulti.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFiSTA.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFiScan.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFiServer.cpp.o
+Compiling .pio/build/psRam/lib635/WiFi/WiFiUdp.cpp.o
+Compiling .pio/build/psRam/lib99d/WiFiClientSecure/WiFiClientSecure.cpp.o
+Compiling .pio/build/psRam/lib99d/WiFiClientSecure/ssl_client.cpp.o
+Compiling .pio/build/psRam/libdaa/WebSockets/SocketIOclient.cpp.o
+Archiving .pio/build/psRam/lib635/libWiFi.a
+Indexing .pio/build/psRam/lib635/libWiFi.a
+Compiling .pio/build/psRam/libdaa/WebSockets/WebSockets.cpp.o
+Compiling .pio/build/psRam/libdaa/WebSockets/WebSocketsClient.cpp.o
+Compiling .pio/build/psRam/libdaa/WebSockets/WebSocketsServer.cpp.o
+Archiving .pio/build/psRam/lib99d/libWiFiClientSecure.a
+Indexing .pio/build/psRam/lib99d/libWiFiClientSecure.a
+Compiling .pio/build/psRam/libdaa/WebSockets/libb64/cdecode.c.o
+Compiling .pio/build/psRam/libdaa/WebSockets/libb64/cencode.c.o
+Compiling .pio/build/psRam/libdaa/WebSockets/libsha1/libsha1.c.o
+Compiling .pio/build/psRam/lib652/NTPClient/NTPClient.cpp.o
+Compiling .pio/build/psRam/libf88/tools/tools.cpp.o
+Compiling .pio/build/psRam/libffd/PubSubClient-2.8.0/PubSubClient.cpp.o
+Archiving .pio/build/psRam/libdaa/libWebSockets.a
+Indexing .pio/build/psRam/libdaa/libWebSockets.a
+Archiving .pio/build/psRam/lib652/libNTPClient.a
+Indexing .pio/build/psRam/lib652/libNTPClient.a
+Compiling .pio/build/psRam/libe21/Update/HttpsOTAUpdate.cpp.o
+Compiling .pio/build/psRam/libe21/Update/Updater.cpp.o
+Archiving .pio/build/psRam/libf88/libtools.a
+Indexing .pio/build/psRam/libf88/libtools.a
+Compiling .pio/build/psRam/libc2e/GxMqtt/GxMqtt.cpp.o
+Compiling .pio/build/psRam/lib427/FS/FS.cpp.o
+Archiving .pio/build/psRam/libffd/libPubSubClient-2.8.0.a
+Indexing .pio/build/psRam/libffd/libPubSubClient-2.8.0.a
+Compiling .pio/build/psRam/lib427/FS/vfs_api.cpp.o
+Archiving .pio/build/psRam/libe21/libUpdate.a
+Indexing .pio/build/psRam/libe21/libUpdate.a
+Compiling .pio/build/psRam/lib284/XPowersLib/XPowersLibInterface.cpp.o
+Compiling .pio/build/psRam/lib158/ArduinoHttpClient-master/HttpClient.cpp.o
+Archiving .pio/build/psRam/lib284/libXPowersLib.a
+Indexing .pio/build/psRam/lib284/libXPowersLib.a
+Compiling .pio/build/psRam/lib158/ArduinoHttpClient-master/URLEncoder.cpp.o
+Archiving .pio/build/psRam/lib427/libFS.a
+Indexing .pio/build/psRam/lib427/libFS.a
+Compiling .pio/build/psRam/lib158/ArduinoHttpClient-master/WebSocketClient.cpp.o
+Archiving .pio/build/psRam/libc2e/libGxMqtt.a
+Indexing .pio/build/psRam/libc2e/libGxMqtt.a
+Compiling .pio/build/psRam/lib158/ArduinoHttpClient-master/b64.cpp.o
+Compiling .pio/build/psRam/libb65/gxUpdater/gxUpdater.cpp.o
+Compiling .pio/build/psRam/lib863/gxUserLed/gxUserLed.cpp.o
+Compiling .pio/build/psRam/lib875/AceButton/ace_button/AceButton.cpp.o
+Archiving .pio/build/psRam/lib158/libArduinoHttpClient-master.a
+Indexing .pio/build/psRam/lib158/libArduinoHttpClient-master.a
+Compiling .pio/build/psRam/lib875/AceButton/ace_button/ButtonConfig.cpp.o
+Archiving .pio/build/psRam/lib863/libgxUserLed.a
+Indexing .pio/build/psRam/lib863/libgxUserLed.a
+Compiling .pio/build/psRam/lib875/AceButton/ace_button/EncodedButtonConfig.cpp.o
+Archiving .pio/build/psRam/libb65/libgxUpdater.a
+Indexing .pio/build/psRam/libb65/libgxUpdater.a
+Compiling .pio/build/psRam/lib875/AceButton/ace_button/LadderButtonConfig.cpp.o
+Compiling .pio/build/psRam/lib875/AceButton/ace_button/testing/EventTracker.cpp.o
+Compiling .pio/build/psRam/lib4da/Arduino-Interpolation-master/InterpolationLib.cpp.o
+Compiling .pio/build/psRam/lib613/I2Cdev/I2Cdev.cpp.o
+Compiling .pio/build/psRam/lib9ff/MPU6050/MPU6050.cpp.o
+Archiving .pio/build/psRam/lib875/libAceButton.a
+Indexing .pio/build/psRam/lib875/libAceButton.a
+Compiling .pio/build/psRam/lib17f/Adafruit_BME280/Adafruit_BME280.cpp.o
+Archiving .pio/build/psRam/lib4da/libArduino-Interpolation-master.a
+Indexing .pio/build/psRam/lib4da/libArduino-Interpolation-master.a
+Compiling .pio/build/psRam/lib275/HMC5883L/HMC5883L.cpp.o
+Archiving .pio/build/psRam/lib613/libI2Cdev.a
+Indexing .pio/build/psRam/lib613/libI2Cdev.a
+Compiling .pio/build/psRam/lib7f5/MS5611/MS5611.cpp.o
+Archiving .pio/build/psRam/lib275/libHMC5883L.a
+Indexing .pio/build/psRam/lib275/libHMC5883L.a
+Compiling .pio/build/psRam/libd38/Preferences/Preferences.cpp.o
+Archiving .pio/build/psRam/lib17f/libAdafruit_BME280.a
+Indexing .pio/build/psRam/lib17f/libAdafruit_BME280.a
+Compiling .pio/build/psRam/lib76f/kalmanvert/kalmanvert.cpp.o
+Archiving .pio/build/psRam/lib7f5/libMS5611.a
+Indexing .pio/build/psRam/lib7f5/libMS5611.a
+Compiling .pio/build/psRam/lib537/Baro/Baro.cpp.o
+Archiving .pio/build/psRam/lib9ff/libMPU6050.a
+Indexing .pio/build/psRam/lib9ff/libMPU6050.a
+Compiling .pio/build/psRam/libeab/Dusk2Dawn-master/Dusk2Dawn.cpp.o
+Archiving .pio/build/psRam/lib76f/libkalmanvert.a
+Indexing .pio/build/psRam/lib76f/libkalmanvert.a
+Compiling .pio/build/psRam/lib5bc/CalcTools/CalcTools.cpp.o
+Archiving .pio/build/psRam/libd38/libPreferences.a
+Indexing .pio/build/psRam/libd38/libPreferences.a
+Compiling .pio/build/psRam/lib28e/FLARM/FlarmDataPort.cpp.o
+Archiving .pio/build/psRam/libeab/libDusk2Dawn-master.a
+Indexing .pio/build/psRam/libeab/libDusk2Dawn-master.a
+Compiling .pio/build/psRam/lib28e/FLARM/FlarmRadio.cpp.o
+Archiving .pio/build/psRam/lib5bc/libCalcTools.a
+Indexing .pio/build/psRam/lib5bc/libCalcTools.a
+Compiling .pio/build/psRam/lib28e/FLARM/lib_crc.cpp.o
+Archiving .pio/build/psRam/lib537/libBaro.a
+Indexing .pio/build/psRam/lib537/libBaro.a
+Compiling .pio/build/psRam/lib550/Time/DateStrings.cpp.o
+Compiling .pio/build/psRam/lib550/Time/Time.cpp.o
+Compiling .pio/build/psRam/lib829/FANETLORA/FanetLora.cpp.o
+Compiling .pio/build/psRam/lib829/FANETLORA/radio/GxModule.cpp.o
+Archiving .pio/build/psRam/lib28e/libFLARM.a
+Indexing .pio/build/psRam/lib28e/libFLARM.a
+Compiling .pio/build/psRam/lib829/FANETLORA/radio/LoRa.cpp.o
+Archiving .pio/build/psRam/lib550/libTime.a
+Indexing .pio/build/psRam/lib550/libTime.a
+Compiling .pio/build/psRam/lib829/FANETLORA/radio/fmac.cpp.o
+Compiling .pio/build/psRam/lib829/FANETLORA/radio/frame.cpp.o
+Compiling .pio/build/psRam/lib829/FANETLORA/radio/lib/TimerObject.cpp.o
+Compiling .pio/build/psRam/lib829/FANETLORA/radio/lib/random.cpp.o
+Compiling .pio/build/psRam/lib9ea/MicroNMEA-master/MicroNMEA.cpp.o
+Compiling .pio/build/psRam/libbcf/OGN/Ogn.cpp.o
+Compiling .pio/build/psRam/lib8fc/SD/SD.cpp.o
+Archiving .pio/build/psRam/lib829/libFANETLORA.a
+Indexing .pio/build/psRam/lib829/libFANETLORA.a
+Compiling .pio/build/psRam/lib8fc/SD/sd_diskio.cpp.o
+Archiving .pio/build/psRam/lib9ea/libMicroNMEA-master.a
+Indexing .pio/build/psRam/lib9ea/libMicroNMEA-master.a
+Compiling .pio/build/psRam/lib8fc/SD/sd_diskio_crc.c.o
+Compiling .pio/build/psRam/libdd5/SPIFFS/SPIFFS.cpp.o
+Compiling .pio/build/psRam/lib115/SparkFun_u-blox_GNSS_Arduino_Library-2.2.24/SparkFun_u-blox_GNSS_Arduino_Library.cpp.o
+Archiving .pio/build/psRam/libbcf/libOGN.a
+Indexing .pio/build/psRam/libbcf/libOGN.a
+Compiling .pio/build/psRam/lib7a4/ADS1X15-0.3.8/ADS1X15.cpp.o
+Archiving .pio/build/psRam/lib8fc/libSD.a
+Indexing .pio/build/psRam/lib8fc/libSD.a
+Compiling .pio/build/psRam/lib300/Arduino-Temperature-Control-Library/DallasTemperature.cpp.o
+Archiving .pio/build/psRam/libdd5/libSPIFFS.a
+Indexing .pio/build/psRam/libdd5/libSPIFFS.a
+Compiling .pio/build/psRam/lib0be/Weather/PeetBros.cpp.o
+Archiving .pio/build/psRam/lib7a4/libADS1X15-0.3.8.a
+Indexing .pio/build/psRam/lib7a4/libADS1X15-0.3.8.a
+Compiling .pio/build/psRam/lib0be/Weather/Tx20.cpp.o
+Compiling .pio/build/psRam/lib0be/Weather/Weather.cpp.o
+Archiving .pio/build/psRam/lib300/libArduino-Temperature-Control-Library.a
+Indexing .pio/build/psRam/lib300/libArduino-Temperature-Control-Library.a
+Compiling .pio/build/psRam/lib7ec/WeatherUnderground/WeatherUnderground.cpp.o
+Compiling .pio/build/psRam/lib551/Windy/Windy.cpp.o
+Archiving .pio/build/psRam/lib0be/libWeather.a
+Indexing .pio/build/psRam/lib0be/libWeather.a
+Compiling .pio/build/psRam/libccc/LPtoneAC/toneAC.cpp.o
+Archiving .pio/build/psRam/libccc/libLPtoneAC.a
+Indexing .pio/build/psRam/libccc/libLPtoneAC.a
+Compiling .pio/build/psRam/lib400/beeper/beeper.cpp.o
+Archiving .pio/build/psRam/lib551/libWindy.a
+Indexing .pio/build/psRam/lib551/libWindy.a
+Compiling .pio/build/psRam/lib50f/SD_MMC/SD_MMC.cpp.o
+Archiving .pio/build/psRam/lib400/libbeeper.a
+Indexing .pio/build/psRam/lib400/libbeeper.a
+Compiling .pio/build/psRam/liba32/GxEPD2-master/GxEPD2_EPD.cpp.o
+Archiving .pio/build/psRam/lib7ec/libWeatherUnderground.a
+Indexing .pio/build/psRam/lib7ec/libWeatherUnderground.a
+Compiling .pio/build/psRam/liba32/GxEPD2-master/GxEPD2_EPD_orig.cpp.o
+Archiving .pio/build/psRam/lib50f/libSD_MMC.a
+Indexing .pio/build/psRam/lib50f/libSD_MMC.a
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_102.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_1160_T91.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_1248.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_154.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_154_D67.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_154_M09.cpp.o
+Archiving .pio/build/psRam/lib115/libSparkFun_u-blox_GNSS_Arduino_Library-2.2.24.a
+Indexing .pio/build/psRam/lib115/libSparkFun_u-blox_GNSS_Arduino_Library-2.2.24.a
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_154_M10.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_154_T8.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_213.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_213_B72.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_213_B73.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_213_B74.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_213_M21.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_213_T5D.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_213_flex.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_260.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_260_M01.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_270.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_290.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_290_I6FD.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_290_M06.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T5.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T5D.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T94.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T94_V2.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_371.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_420.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_420_M01.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_583.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_583_T8.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_750.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd/GxEPD2_750_T7.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_154_Z90c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_154c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_213_Z19c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_213c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_270c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_290_C90c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_290_Z13c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_290c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_420c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_420c_Z21.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_565c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_583c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c_Z08.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c_Z90.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/it8951/GxEPD2_it60.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/it8951/GxEPD2_it60_1448x1072.cpp.o
+Compiling .pio/build/psRam/liba32/GxEPD2-master/it8951/GxEPD2_it78_1872x1404.cpp.o
+Compiling .pio/build/psRam/lib99d/AsyncTCP-master/AsyncTCP.cpp.o
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/AsyncEventSource.cpp.o
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/AsyncWebSocket.cpp.o
+Archiving .pio/build/psRam/liba32/libGxEPD2-master.a
+Indexing .pio/build/psRam/liba32/libGxEPD2-master.a
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/SPIFFSEditor.cpp.o
+Archiving .pio/build/psRam/lib99d/libAsyncTCP-master.a
+Indexing .pio/build/psRam/lib99d/libAsyncTCP-master.a
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/WebAuthentication.cpp.o
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/WebHandlers.cpp.o
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/WebRequest.cpp.o
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/WebResponses.cpp.o
+Compiling .pio/build/psRam/lib3e5/ESPAsyncWebServer-master/WebServer.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLE2902.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLE2904.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEAddress.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEAdvertisedDevice.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEAdvertising.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEBeacon.cpp.o
+Archiving .pio/build/psRam/lib3e5/libESPAsyncWebServer-master.a
+Indexing .pio/build/psRam/lib3e5/libESPAsyncWebServer-master.a
+Compiling .pio/build/psRam/lib154/BLE/BLECharacteristic.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLECharacteristicMap.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEClient.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEDescriptor.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEDescriptorMap.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEDevice.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEEddystoneTLM.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEEddystoneURL.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEExceptions.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEHIDDevice.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLERemoteCharacteristic.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLERemoteDescriptor.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLERemoteService.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEScan.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLESecurity.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEServer.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEService.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEServiceMap.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEUUID.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEUtils.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/BLEValue.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/FreeRTOS.cpp.o
+Compiling .pio/build/psRam/lib154/BLE/GeneralUtils.cpp.o
+Compiling .pio/build/psRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH1106G.cpp.o
+Compiling .pio/build/psRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH1107.cpp.o
+Compiling .pio/build/psRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH110X.cpp.o
+Compiling .pio/build/psRam/lib4aa/Adafruit_SSD1306-master/Adafruit_SSD1306.cpp.o
+Archiving .pio/build/psRam/lib154/libBLE.a
+Archiving .pio/build/psRam/libFrameworkArduinoVariant.a
+Indexing .pio/build/psRam/libFrameworkArduinoVariant.a
+Indexing .pio/build/psRam/lib154/libBLE.a
+Compiling .pio/build/psRam/FrameworkArduino/Esp.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/FunctionalInterrupt.cpp.o
+Archiving .pio/build/psRam/lib23a/libAdafruit_SH110x-2.1.9.a
+Indexing .pio/build/psRam/lib23a/libAdafruit_SH110x-2.1.9.a
+Compiling .pio/build/psRam/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/IPAddress.cpp.o
+Archiving .pio/build/psRam/lib4aa/libAdafruit_SSD1306-master.a
+Indexing .pio/build/psRam/lib4aa/libAdafruit_SSD1306-master.a
+Compiling .pio/build/psRam/FrameworkArduino/IPv6Address.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-log.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/psRam/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/psRam/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/psRam/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/psRam/FrameworkArduino/main.cpp.o
+Compiling .pio/build/psRam/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/psRam/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/psRam/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/psRam/libFrameworkArduino.a
+Indexing .pio/build/psRam/libFrameworkArduino.a
+Linking .pio/build/psRam/firmware.elf
+Retrieving maximum program size .pio/build/psRam/firmware.elf
+Checking size .pio/build/psRam/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  21.8% (used 71488 bytes from 327680 bytes)
+Flash: [========= ]  93.2% (used 1831434 bytes from 1966080 bytes)
+Building .pio/build/psRam/firmware.bin
+esptool.py v3.1
+Merged 1 ELF section
+copy_file([".pio/build/psRam/firmware.bin"], [".pio/build/psRam/firmware.elf"])
+Copying file output to project directory...
+firmware.bin
+psRam
+build
+v7.1.0
+********  copy file .pio/build/psRam/firmware.bin to bin/psRam/v7.1.0/firmware.bin *******
+********  copy file bin/bootloader_dio_40m.bin to bin/psRam/v7.1.0/bootloader.bin *******
+Done.
+======================== [SUCCESS] Took 119.70 seconds ========================
+
+Processing nopsRam (framework: arduino; board: esp32dev; platform: espressif32@3.4.0)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (3.4.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (esp-prog) External (esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.10006.210326 (1.0.6) 
+ - tool-esptoolpy @ 1.30100.210531 (3.1.0) 
+ - toolchain-xtensa32 @ 2.50200.97 (5.2.0)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 78 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 1.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD(esp32) @ 1.0.5
+|-- SPI @ 1.0
+|-- SPIFFS @ 1.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 1.0
+|-- Windy
+|-- Wire @ 1.0.1
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 1.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 1.0
+|-- Preferences @ 1.0
+|-- ESP32 BLE Arduino @ 1.0.1
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Compiling .pio/build/nopsRam/src/Logger.cpp.o
+Compiling .pio/build/nopsRam/src/Screen.cpp.o
+Compiling .pio/build/nopsRam/src/WebHelper.cpp.o
+Compiling .pio/build/nopsRam/src/fileOps.cpp.o
+Compiling .pio/build/nopsRam/src/main.cpp.o
+Compiling .pio/build/nopsRam/src/oled.cpp.o
+Generating partitions .pio/build/nopsRam/partitions.bin
+copy_file([".pio/build/nopsRam/partitions.bin"], ["/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/tools/partitions/min_spiffs.csv"])
+Copying file output to project directory...
+partitions.bin
+nopsRam
+build
+v7.1.0
+********  copy file .pio/build/nopsRam/partitions.bin to bin/nopsRam/v7.1.0/partitions.bin *******
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLE2904.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEAddress.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEAdvertisedDevice.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEAdvertising.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEBeacon.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLECharacteristic.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEClient.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEDescriptor.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEDevice.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEEddystoneTLM.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEEddystoneURL.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEExtAdvertising.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEHIDDevice.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLERemoteCharacteristic.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLERemoteDescriptor.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLERemoteService.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEScan.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLESecurity.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEServer.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEService.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEUUID.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/NimBLEUtils.cpp.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/esp_port/esp-hci/src/esp_nimble_hci.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/esp_port/port/src/esp_nimble_mem.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/aes_decrypt.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/aes_encrypt.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/cbc_mode.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/ccm_mode.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/cmac_mode.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/ctr_mode.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/ctr_prng.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_dh.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_dsa.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_platform_specific.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/hmac.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/hmac_prng.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/sha256.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/ext/tinycrypt/src/utils.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_adv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_conn.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_conn_hci.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_ctrl.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_dtm.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_hci.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_hci_ev.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_iso.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_rand.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_resolv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_rfmgmt.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_scan.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_sched.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_supp_cmd.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_sync.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_trace.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_utils.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_whitelist.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/drivers/nrf51/src/ble_hw.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/drivers/nrf51/src/ble_phy.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_hw.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_phy.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_phy_trace.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/access.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/adv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/aes-ccm.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/app_keys.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/beacon.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/cdb.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg_cli.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg_srv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/crypto.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/friend.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/glue.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/health_cli.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/health_srv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/heartbeat.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/light_model.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/lpn.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/mesh.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/model_cli.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/model_srv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/net.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/nodes.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/pb_adv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/pb_gatt.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/prov.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/prov_device.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/provisioner.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/proxy.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/rpl.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/settings.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/shell.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/subnet.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/mesh/src/transport.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/ans/src/ble_svc_ans.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/bas/src/ble_svc_bas.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/dis/src/ble_svc_dis.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/gap/src/ble_svc_gap.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/gatt/src/ble_svc_gatt.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/ias/src/ble_svc_ias.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/ipss/src/ble_svc_ipss.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/services/lls/src/ble_svc_lls.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_att.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_att_clt.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_att_cmd.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_att_svr.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_eddystone.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_gap.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_gattc.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_gatts.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_gatts_lcl.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_adv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_atomic.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_cfg.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_conn.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_flow.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_cmd.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_evt.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_util.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_id.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_log.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_mbuf.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_misc.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_mqueue.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_periodic_sync.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_pvcy.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_resolv.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_shutdown.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_startup.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_stop.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_ibeacon.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_coc.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_sig.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_sig_cmd.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_monitor.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_sm.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_alg.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_cmd.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_lgcy.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_sc.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_store.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_store_util.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/src/ble_uuid.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_config.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_config_conf.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_nvs.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/host/util/src/addr.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/nimble/transport/ram/src/ble_hci_ram.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/endian.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/hal_timer.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/hal_uart.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/mem.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/nimble_port.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/os_cputime.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/os_cputime_pwr2.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/os_mbuf.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/os_mempool.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/nimble/src/os_msys_init.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/npl/freertos/src/nimble_port_freertos.c.o
+Compiling .pio/build/nopsRam/libc6d/NimBLE-Arduino/nimble/porting/npl/freertos/src/npl_os_freertos.c.o
+Compiling .pio/build/nopsRam/lib608/OneWire/OneWire.cpp.o
+Compiling .pio/build/nopsRam/libe1b/Wire/Wire.cpp.o
+Compiling .pio/build/nopsRam/lib85c/SPI/SPI.cpp.o
+Archiving .pio/build/nopsRam/libc6d/libNimBLE-Arduino.a
+Archiving .pio/build/nopsRam/lib85c/libSPI.a
+Indexing .pio/build/nopsRam/lib85c/libSPI.a
+Indexing .pio/build/nopsRam/libc6d/libNimBLE-Arduino.a
+Compiling .pio/build/nopsRam/libdb5/Adafruit BusIO/Adafruit_BusIO_Register.cpp.o
+Compiling .pio/build/nopsRam/libdb5/Adafruit BusIO/Adafruit_I2CDevice.cpp.o
+Archiving .pio/build/nopsRam/lib608/libOneWire.a
+Indexing .pio/build/nopsRam/lib608/libOneWire.a
+Compiling .pio/build/nopsRam/libdb5/Adafruit BusIO/Adafruit_SPIDevice.cpp.o
+Archiving .pio/build/nopsRam/libe1b/libWire.a
+Indexing .pio/build/nopsRam/libe1b/libWire.a
+Compiling .pio/build/nopsRam/liba9a/Adafruit GFX Library/Adafruit_GFX.cpp.o
+Compiling .pio/build/nopsRam/liba9a/Adafruit GFX Library/Adafruit_GrayOLED.cpp.o
+Compiling .pio/build/nopsRam/liba9a/Adafruit GFX Library/Adafruit_SPITFT.cpp.o
+Archiving .pio/build/nopsRam/libdb5/libAdafruit BusIO.a
+Indexing .pio/build/nopsRam/libdb5/libAdafruit BusIO.a
+Compiling .pio/build/nopsRam/liba9a/Adafruit GFX Library/glcdfont.c.o
+Compiling .pio/build/nopsRam/lib3af/RTClib/RTC_DS1307.cpp.o
+Compiling .pio/build/nopsRam/lib3af/RTClib/RTC_DS3231.cpp.o
+Compiling .pio/build/nopsRam/lib3af/RTClib/RTC_Micros.cpp.o
+Archiving .pio/build/nopsRam/liba9a/libAdafruit GFX Library.a
+Indexing .pio/build/nopsRam/liba9a/libAdafruit GFX Library.a
+Compiling .pio/build/nopsRam/lib3af/RTClib/RTC_Millis.cpp.o
+Compiling .pio/build/nopsRam/lib3af/RTClib/RTC_PCF8523.cpp.o
+Compiling .pio/build/nopsRam/lib3af/RTClib/RTC_PCF8563.cpp.o
+Compiling .pio/build/nopsRam/lib3af/RTClib/RTClib.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/ETH.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFi.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiAP.cpp.o
+Archiving .pio/build/nopsRam/lib3af/libRTClib.a
+Indexing .pio/build/nopsRam/lib3af/libRTClib.a
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiClient.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiGeneric.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiMulti.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiSTA.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiScan.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiServer.cpp.o
+Compiling .pio/build/nopsRam/lib635/WiFi/WiFiUdp.cpp.o
+Compiling .pio/build/nopsRam/lib99d/WiFiClientSecure/WiFiClientSecure.cpp.o
+Compiling .pio/build/nopsRam/lib99d/WiFiClientSecure/ssl_client.cpp.o
+Compiling .pio/build/nopsRam/lib628/WebSockets/SocketIOclient.cpp.o
+Archiving .pio/build/nopsRam/lib635/libWiFi.a
+Indexing .pio/build/nopsRam/lib635/libWiFi.a
+Compiling .pio/build/nopsRam/lib628/WebSockets/WebSockets.cpp.o
+Compiling .pio/build/nopsRam/lib628/WebSockets/WebSocketsClient.cpp.o
+Archiving .pio/build/nopsRam/lib99d/libWiFiClientSecure.a
+Indexing .pio/build/nopsRam/lib99d/libWiFiClientSecure.a
+Compiling .pio/build/nopsRam/lib628/WebSockets/WebSocketsServer.cpp.o
+Compiling .pio/build/nopsRam/lib628/WebSockets/libb64/cdecode.c.o
+Compiling .pio/build/nopsRam/lib628/WebSockets/libb64/cencode.c.o
+Compiling .pio/build/nopsRam/lib628/WebSockets/libsha1/libsha1.c.o
+Compiling .pio/build/nopsRam/lib944/NTPClient/NTPClient.cpp.o
+Compiling .pio/build/nopsRam/libf88/tools/tools.cpp.o
+Compiling .pio/build/nopsRam/libffd/PubSubClient-2.8.0/PubSubClient.cpp.o
+Archiving .pio/build/nopsRam/lib944/libNTPClient.a
+Indexing .pio/build/nopsRam/lib944/libNTPClient.a
+Compiling .pio/build/nopsRam/libe21/Update/HttpsOTAUpdate.cpp.o
+Archiving .pio/build/nopsRam/libf88/libtools.a
+Indexing .pio/build/nopsRam/libf88/libtools.a
+Compiling .pio/build/nopsRam/libe21/Update/Updater.cpp.o
+Archiving .pio/build/nopsRam/lib628/libWebSockets.a
+Indexing .pio/build/nopsRam/lib628/libWebSockets.a
+Compiling .pio/build/nopsRam/libc2e/GxMqtt/GxMqtt.cpp.o
+Compiling .pio/build/nopsRam/lib427/FS/FS.cpp.o
+Archiving .pio/build/nopsRam/libffd/libPubSubClient-2.8.0.a
+Indexing .pio/build/nopsRam/libffd/libPubSubClient-2.8.0.a
+Compiling .pio/build/nopsRam/lib427/FS/vfs_api.cpp.o
+Archiving .pio/build/nopsRam/libe21/libUpdate.a
+Indexing .pio/build/nopsRam/libe21/libUpdate.a
+Compiling .pio/build/nopsRam/lib284/XPowersLib/XPowersLibInterface.cpp.o
+Compiling .pio/build/nopsRam/lib158/ArduinoHttpClient-master/HttpClient.cpp.o
+Archiving .pio/build/nopsRam/lib284/libXPowersLib.a
+Indexing .pio/build/nopsRam/lib284/libXPowersLib.a
+Compiling .pio/build/nopsRam/lib158/ArduinoHttpClient-master/URLEncoder.cpp.o
+Archiving .pio/build/nopsRam/lib427/libFS.a
+Indexing .pio/build/nopsRam/lib427/libFS.a
+Compiling .pio/build/nopsRam/lib158/ArduinoHttpClient-master/WebSocketClient.cpp.o
+Archiving .pio/build/nopsRam/libc2e/libGxMqtt.a
+Indexing .pio/build/nopsRam/libc2e/libGxMqtt.a
+Compiling .pio/build/nopsRam/lib158/ArduinoHttpClient-master/b64.cpp.o
+Compiling .pio/build/nopsRam/libb65/gxUpdater/gxUpdater.cpp.o
+Compiling .pio/build/nopsRam/lib863/gxUserLed/gxUserLed.cpp.o
+Compiling .pio/build/nopsRam/lib875/AceButton/ace_button/AceButton.cpp.o
+Archiving .pio/build/nopsRam/lib158/libArduinoHttpClient-master.a
+Indexing .pio/build/nopsRam/lib158/libArduinoHttpClient-master.a
+Compiling .pio/build/nopsRam/lib875/AceButton/ace_button/ButtonConfig.cpp.o
+Archiving .pio/build/nopsRam/libb65/libgxUpdater.a
+Indexing .pio/build/nopsRam/libb65/libgxUpdater.a
+Compiling .pio/build/nopsRam/lib875/AceButton/ace_button/EncodedButtonConfig.cpp.o
+Archiving .pio/build/nopsRam/lib863/libgxUserLed.a
+Indexing .pio/build/nopsRam/lib863/libgxUserLed.a
+Compiling .pio/build/nopsRam/lib875/AceButton/ace_button/LadderButtonConfig.cpp.o
+Compiling .pio/build/nopsRam/lib875/AceButton/ace_button/testing/EventTracker.cpp.o
+Compiling .pio/build/nopsRam/lib4da/Arduino-Interpolation-master/InterpolationLib.cpp.o
+Compiling .pio/build/nopsRam/lib613/I2Cdev/I2Cdev.cpp.o
+Compiling .pio/build/nopsRam/lib9ff/MPU6050/MPU6050.cpp.o
+Archiving .pio/build/nopsRam/lib875/libAceButton.a
+Indexing .pio/build/nopsRam/lib875/libAceButton.a
+Compiling .pio/build/nopsRam/lib17f/Adafruit_BME280/Adafruit_BME280.cpp.o
+Archiving .pio/build/nopsRam/lib4da/libArduino-Interpolation-master.a
+Indexing .pio/build/nopsRam/lib4da/libArduino-Interpolation-master.a
+Compiling .pio/build/nopsRam/lib275/HMC5883L/HMC5883L.cpp.o
+Archiving .pio/build/nopsRam/lib613/libI2Cdev.a
+Indexing .pio/build/nopsRam/lib613/libI2Cdev.a
+Compiling .pio/build/nopsRam/lib7f5/MS5611/MS5611.cpp.o
+Archiving .pio/build/nopsRam/lib275/libHMC5883L.a
+Archiving .pio/build/nopsRam/lib17f/libAdafruit_BME280.a
+Indexing .pio/build/nopsRam/lib275/libHMC5883L.a
+Indexing .pio/build/nopsRam/lib17f/libAdafruit_BME280.a
+Compiling .pio/build/nopsRam/libd38/Preferences/Preferences.cpp.o
+Compiling .pio/build/nopsRam/lib76f/kalmanvert/kalmanvert.cpp.o
+Archiving .pio/build/nopsRam/lib7f5/libMS5611.a
+Indexing .pio/build/nopsRam/lib7f5/libMS5611.a
+Compiling .pio/build/nopsRam/lib537/Baro/Baro.cpp.o
+Archiving .pio/build/nopsRam/lib9ff/libMPU6050.a
+Indexing .pio/build/nopsRam/lib9ff/libMPU6050.a
+Compiling .pio/build/nopsRam/libeab/Dusk2Dawn-master/Dusk2Dawn.cpp.o
+Archiving .pio/build/nopsRam/lib76f/libkalmanvert.a
+Archiving .pio/build/nopsRam/libd38/libPreferences.a
+Indexing .pio/build/nopsRam/lib76f/libkalmanvert.a
+Indexing .pio/build/nopsRam/libd38/libPreferences.a
+Compiling .pio/build/nopsRam/lib5bc/CalcTools/CalcTools.cpp.o
+Compiling .pio/build/nopsRam/lib28e/FLARM/FlarmDataPort.cpp.o
+Archiving .pio/build/nopsRam/libeab/libDusk2Dawn-master.a
+Indexing .pio/build/nopsRam/libeab/libDusk2Dawn-master.a
+Compiling .pio/build/nopsRam/lib28e/FLARM/FlarmRadio.cpp.o
+Archiving .pio/build/nopsRam/lib5bc/libCalcTools.a
+Indexing .pio/build/nopsRam/lib5bc/libCalcTools.a
+Compiling .pio/build/nopsRam/lib28e/FLARM/lib_crc.cpp.o
+Compiling .pio/build/nopsRam/lib550/Time/DateStrings.cpp.o
+Compiling .pio/build/nopsRam/lib550/Time/Time.cpp.o
+Archiving .pio/build/nopsRam/lib537/libBaro.a
+Indexing .pio/build/nopsRam/lib537/libBaro.a
+Compiling .pio/build/nopsRam/lib829/FANETLORA/FanetLora.cpp.o
+Compiling .pio/build/nopsRam/lib829/FANETLORA/radio/GxModule.cpp.o
+Archiving .pio/build/nopsRam/lib28e/libFLARM.a
+Archiving .pio/build/nopsRam/lib550/libTime.a
+Indexing .pio/build/nopsRam/lib28e/libFLARM.a
+Indexing .pio/build/nopsRam/lib550/libTime.a
+Compiling .pio/build/nopsRam/lib829/FANETLORA/radio/LoRa.cpp.o
+Compiling .pio/build/nopsRam/lib829/FANETLORA/radio/fmac.cpp.o
+Compiling .pio/build/nopsRam/lib829/FANETLORA/radio/frame.cpp.o
+Compiling .pio/build/nopsRam/lib829/FANETLORA/radio/lib/TimerObject.cpp.o
+Compiling .pio/build/nopsRam/lib829/FANETLORA/radio/lib/random.cpp.o
+Compiling .pio/build/nopsRam/lib9ea/MicroNMEA-master/MicroNMEA.cpp.o
+Compiling .pio/build/nopsRam/libbcf/OGN/Ogn.cpp.o
+Compiling .pio/build/nopsRam/lib8fc/SD/SD.cpp.o
+Archiving .pio/build/nopsRam/lib9ea/libMicroNMEA-master.a
+Indexing .pio/build/nopsRam/lib9ea/libMicroNMEA-master.a
+Compiling .pio/build/nopsRam/lib8fc/SD/sd_diskio.cpp.o
+Archiving .pio/build/nopsRam/lib829/libFANETLORA.a
+Indexing .pio/build/nopsRam/lib829/libFANETLORA.a
+Compiling .pio/build/nopsRam/lib8fc/SD/sd_diskio_crc.c.o
+Archiving .pio/build/nopsRam/libbcf/libOGN.a
+Indexing .pio/build/nopsRam/libbcf/libOGN.a
+Compiling .pio/build/nopsRam/libdd5/SPIFFS/SPIFFS.cpp.o
+Compiling .pio/build/nopsRam/lib115/SparkFun_u-blox_GNSS_Arduino_Library-2.2.24/SparkFun_u-blox_GNSS_Arduino_Library.cpp.o
+Compiling .pio/build/nopsRam/lib7a4/ADS1X15-0.3.8/ADS1X15.cpp.o
+Archiving .pio/build/nopsRam/lib8fc/libSD.a
+Indexing .pio/build/nopsRam/lib8fc/libSD.a
+Compiling .pio/build/nopsRam/lib300/Arduino-Temperature-Control-Library/DallasTemperature.cpp.o
+Archiving .pio/build/nopsRam/libdd5/libSPIFFS.a
+Indexing .pio/build/nopsRam/libdd5/libSPIFFS.a
+Compiling .pio/build/nopsRam/lib0be/Weather/PeetBros.cpp.o
+Archiving .pio/build/nopsRam/lib7a4/libADS1X15-0.3.8.a
+Indexing .pio/build/nopsRam/lib7a4/libADS1X15-0.3.8.a
+Compiling .pio/build/nopsRam/lib0be/Weather/Tx20.cpp.o
+Archiving .pio/build/nopsRam/lib300/libArduino-Temperature-Control-Library.a
+Indexing .pio/build/nopsRam/lib300/libArduino-Temperature-Control-Library.a
+Compiling .pio/build/nopsRam/lib0be/Weather/Weather.cpp.o
+Compiling .pio/build/nopsRam/lib7ec/WeatherUnderground/WeatherUnderground.cpp.o
+Compiling .pio/build/nopsRam/lib551/Windy/Windy.cpp.o
+Archiving .pio/build/nopsRam/lib0be/libWeather.a
+Indexing .pio/build/nopsRam/lib0be/libWeather.a
+Compiling .pio/build/nopsRam/libccc/LPtoneAC/toneAC.cpp.o
+Archiving .pio/build/nopsRam/libccc/libLPtoneAC.a
+Indexing .pio/build/nopsRam/libccc/libLPtoneAC.a
+Compiling .pio/build/nopsRam/lib400/beeper/beeper.cpp.o
+Archiving .pio/build/nopsRam/lib551/libWindy.a
+Indexing .pio/build/nopsRam/lib551/libWindy.a
+Compiling .pio/build/nopsRam/lib50f/SD_MMC/SD_MMC.cpp.o
+Archiving .pio/build/nopsRam/lib7ec/libWeatherUnderground.a
+Indexing .pio/build/nopsRam/lib7ec/libWeatherUnderground.a
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/GxEPD2_EPD.cpp.o
+Archiving .pio/build/nopsRam/lib400/libbeeper.a
+Indexing .pio/build/nopsRam/lib400/libbeeper.a
+Archiving .pio/build/nopsRam/lib50f/libSD_MMC.a
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/GxEPD2_EPD_orig.cpp.o
+Indexing .pio/build/nopsRam/lib50f/libSD_MMC.a
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_102.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_1160_T91.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_1248.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_154.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_154_D67.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_154_M09.cpp.o
+Archiving .pio/build/nopsRam/lib115/libSparkFun_u-blox_GNSS_Arduino_Library-2.2.24.a
+Indexing .pio/build/nopsRam/lib115/libSparkFun_u-blox_GNSS_Arduino_Library-2.2.24.a
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_154_M10.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_154_T8.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_213.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_213_B72.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_213_B73.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_213_B74.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_213_M21.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_213_T5D.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_213_flex.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_260.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_260_M01.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_270.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_290.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_290_I6FD.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_290_M06.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_290_T5.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_290_T5D.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_290_T94.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_290_T94_V2.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_371.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_420.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_420_M01.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_583.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_583_T8.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_750.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd/GxEPD2_750_T7.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_154_Z90c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_154c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_213_Z19c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_213c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_270c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_290_C90c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_290_Z13c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_290c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_420c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_420c_Z21.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_565c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_583c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c_Z08.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c_Z90.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/it8951/GxEPD2_it60.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/it8951/GxEPD2_it60_1448x1072.cpp.o
+Compiling .pio/build/nopsRam/liba32/GxEPD2-master/it8951/GxEPD2_it78_1872x1404.cpp.o
+Compiling .pio/build/nopsRam/lib99d/AsyncTCP-master/AsyncTCP.cpp.o
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/AsyncEventSource.cpp.o
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/AsyncWebSocket.cpp.o
+Archiving .pio/build/nopsRam/liba32/libGxEPD2-master.a
+Archiving .pio/build/nopsRam/lib99d/libAsyncTCP-master.a
+Indexing .pio/build/nopsRam/lib99d/libAsyncTCP-master.a
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/SPIFFSEditor.cpp.o
+Indexing .pio/build/nopsRam/liba32/libGxEPD2-master.a
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/WebAuthentication.cpp.o
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/WebHandlers.cpp.o
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/WebRequest.cpp.o
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/WebResponses.cpp.o
+Compiling .pio/build/nopsRam/lib3e5/ESPAsyncWebServer-master/WebServer.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLE2902.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLE2904.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEAddress.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEAdvertisedDevice.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEAdvertising.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEBeacon.cpp.o
+Archiving .pio/build/nopsRam/lib3e5/libESPAsyncWebServer-master.a
+Indexing .pio/build/nopsRam/lib3e5/libESPAsyncWebServer-master.a
+Compiling .pio/build/nopsRam/lib154/BLE/BLECharacteristic.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLECharacteristicMap.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEClient.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEDescriptor.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEDescriptorMap.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEDevice.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEEddystoneTLM.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEEddystoneURL.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEExceptions.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEHIDDevice.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLERemoteCharacteristic.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLERemoteDescriptor.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLERemoteService.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEScan.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLESecurity.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEServer.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEService.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEServiceMap.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEUUID.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEUtils.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/BLEValue.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/FreeRTOS.cpp.o
+Compiling .pio/build/nopsRam/lib154/BLE/GeneralUtils.cpp.o
+Compiling .pio/build/nopsRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH1106G.cpp.o
+Compiling .pio/build/nopsRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH1107.cpp.o
+Compiling .pio/build/nopsRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH110X.cpp.o
+Compiling .pio/build/nopsRam/lib4aa/Adafruit_SSD1306-master/Adafruit_SSD1306.cpp.o
+Archiving .pio/build/nopsRam/libFrameworkArduinoVariant.a
+Indexing .pio/build/nopsRam/libFrameworkArduinoVariant.a
+Compiling .pio/build/nopsRam/FrameworkArduino/Esp.cpp.o
+Archiving .pio/build/nopsRam/lib154/libBLE.a
+Archiving .pio/build/nopsRam/lib23a/libAdafruit_SH110x-2.1.9.a
+Indexing .pio/build/nopsRam/lib23a/libAdafruit_SH110x-2.1.9.a
+Indexing .pio/build/nopsRam/lib154/libBLE.a
+Compiling .pio/build/nopsRam/FrameworkArduino/FunctionalInterrupt.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/HardwareSerial.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/IPAddress.cpp.o
+Archiving .pio/build/nopsRam/lib4aa/libAdafruit_SSD1306-master.a
+Indexing .pio/build/nopsRam/lib4aa/libAdafruit_SSD1306-master.a
+Compiling .pio/build/nopsRam/FrameworkArduino/IPv6Address.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-log.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/main.cpp.o
+Compiling .pio/build/nopsRam/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/nopsRam/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/nopsRam/libFrameworkArduino.a
+Indexing .pio/build/nopsRam/libFrameworkArduino.a
+Linking .pio/build/nopsRam/firmware.elf
+Retrieving maximum program size .pio/build/nopsRam/firmware.elf
+Checking size .pio/build/nopsRam/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  21.3% (used 69824 bytes from 327680 bytes)
+Flash: [========= ]  89.5% (used 1758742 bytes from 1966080 bytes)
+Building .pio/build/nopsRam/firmware.bin
+esptool.py v3.1
+Merged 1 ELF section
+copy_file([".pio/build/nopsRam/firmware.bin"], [".pio/build/nopsRam/firmware.elf"])
+Copying file output to project directory...
+firmware.bin
+nopsRam
+build
+v7.1.0
+********  copy file .pio/build/nopsRam/firmware.bin to bin/nopsRam/v7.1.0/firmware.bin *******
+********  copy file bin/bootloader_dio_40m.bin to bin/nopsRam/v7.1.0/bootloader.bin *******
+Done.
+======================== [SUCCESS] Took 137.72 seconds ========================
+
+Processing sim7000_psRam (framework: arduino; board: esp32dev; platform: espressif32@3.4.0)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (3.4.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (esp-prog) External (esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.10006.210326 (1.0.6) 
+ - tool-esptoolpy @ 1.30100.210531 (3.1.0) 
+ - toolchain-xtensa32 @ 2.50200.97 (5.2.0)
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 78 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 1.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD(esp32) @ 1.0.5
+|-- SPI @ 1.0
+|-- SPIFFS @ 1.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 1.0
+|-- Windy
+|-- Wire @ 1.0.1
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 1.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 1.0
+|-- Preferences @ 1.0
+|-- ESP32 BLE Arduino @ 1.0.1
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Compiling .pio/build/sim7000_psRam/src/Logger.cpp.o
+Compiling .pio/build/sim7000_psRam/src/Screen.cpp.o
+Compiling .pio/build/sim7000_psRam/src/WebHelper.cpp.o
+Compiling .pio/build/sim7000_psRam/src/fileOps.cpp.o
+Compiling .pio/build/sim7000_psRam/src/main.cpp.o
+Compiling .pio/build/sim7000_psRam/src/oled.cpp.o
+Generating partitions .pio/build/sim7000_psRam/partitions.bin
+copy_file([".pio/build/sim7000_psRam/partitions.bin"], ["/home/nrb/.platformio/packages/framework-arduinoespressif32@3.10006.210326/tools/partitions/min_spiffs.csv"])
+Copying file output to project directory...
+partitions.bin
+sim7000_psRam
+build
+v7.1.0
+********  copy file .pio/build/sim7000_psRam/partitions.bin to bin/sim7000_psRam/v7.1.0/partitions.bin *******
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLE2904.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEAddress.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEAdvertisedDevice.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEAdvertising.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEBeacon.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLECharacteristic.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEClient.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEDescriptor.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEDevice.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEEddystoneTLM.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEEddystoneURL.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEExtAdvertising.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEHIDDevice.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLERemoteCharacteristic.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLERemoteDescriptor.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLERemoteService.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEScan.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLESecurity.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEServer.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEService.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEUUID.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/NimBLEUtils.cpp.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/esp_port/esp-hci/src/esp_nimble_hci.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/esp_port/port/src/esp_nimble_mem.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/aes_decrypt.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/aes_encrypt.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/cbc_mode.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/ccm_mode.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/cmac_mode.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/ctr_mode.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/ctr_prng.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_dh.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_dsa.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/ecc_platform_specific.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/hmac.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/hmac_prng.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/sha256.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/ext/tinycrypt/src/utils.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_adv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_conn.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_conn_hci.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_ctrl.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_dtm.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_hci.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_hci_ev.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_iso.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_rand.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_resolv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_rfmgmt.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_scan.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_sched.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_supp_cmd.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_sync.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_trace.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_utils.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/controller/src/ble_ll_whitelist.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/drivers/nrf51/src/ble_hw.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/drivers/nrf51/src/ble_phy.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_hw.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_phy.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/drivers/nrf52/src/ble_phy_trace.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/access.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/adv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/aes-ccm.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/app_keys.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/beacon.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/cdb.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg_cli.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/cfg_srv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/crypto.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/friend.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/glue.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/health_cli.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/health_srv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/heartbeat.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/light_model.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/lpn.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/mesh.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/model_cli.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/model_srv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/net.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/nodes.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/pb_adv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/pb_gatt.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/prov.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/prov_device.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/provisioner.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/proxy.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/rpl.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/settings.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/shell.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/subnet.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/mesh/src/transport.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/ans/src/ble_svc_ans.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/bas/src/ble_svc_bas.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/dis/src/ble_svc_dis.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/gap/src/ble_svc_gap.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/gatt/src/ble_svc_gatt.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/ias/src/ble_svc_ias.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/ipss/src/ble_svc_ipss.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/services/lls/src/ble_svc_lls.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_att.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_att_clt.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_att_cmd.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_att_svr.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_eddystone.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_gap.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_gattc.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_gatts.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_gatts_lcl.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_adv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_atomic.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_cfg.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_conn.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_flow.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_cmd.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_evt.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_hci_util.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_id.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_log.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_mbuf.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_misc.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_mqueue.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_periodic_sync.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_pvcy.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_resolv.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_shutdown.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_startup.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_hs_stop.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_ibeacon.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_coc.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_sig.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_l2cap_sig_cmd.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_monitor.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_sm.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_alg.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_cmd.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_lgcy.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_sm_sc.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_store.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_store_util.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/src/ble_uuid.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_config.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_config_conf.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/store/config/src/ble_store_nvs.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/host/util/src/addr.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/nimble/transport/ram/src/ble_hci_ram.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/endian.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/hal_timer.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/hal_uart.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/mem.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/nimble_port.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/os_cputime.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/os_cputime_pwr2.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/os_mbuf.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/os_mempool.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/nimble/src/os_msys_init.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/npl/freertos/src/nimble_port_freertos.c.o
+Compiling .pio/build/sim7000_psRam/libd51/NimBLE-Arduino/nimble/porting/npl/freertos/src/npl_os_freertos.c.o
+Compiling .pio/build/sim7000_psRam/lib33c/OneWire/OneWire.cpp.o
+Compiling .pio/build/sim7000_psRam/libe1b/Wire/Wire.cpp.o
+Compiling .pio/build/sim7000_psRam/lib85c/SPI/SPI.cpp.o
+Archiving .pio/build/sim7000_psRam/libd51/libNimBLE-Arduino.a
+Archiving .pio/build/sim7000_psRam/lib85c/libSPI.a
+Indexing .pio/build/sim7000_psRam/lib85c/libSPI.a
+Compiling .pio/build/sim7000_psRam/lib565/Adafruit BusIO/Adafruit_BusIO_Register.cpp.o
+Indexing .pio/build/sim7000_psRam/libd51/libNimBLE-Arduino.a
+Archiving .pio/build/sim7000_psRam/lib33c/libOneWire.a
+Compiling .pio/build/sim7000_psRam/lib565/Adafruit BusIO/Adafruit_I2CDevice.cpp.o
+Indexing .pio/build/sim7000_psRam/lib33c/libOneWire.a
+Compiling .pio/build/sim7000_psRam/lib565/Adafruit BusIO/Adafruit_SPIDevice.cpp.o
+Archiving .pio/build/sim7000_psRam/libe1b/libWire.a
+Indexing .pio/build/sim7000_psRam/libe1b/libWire.a
+Compiling .pio/build/sim7000_psRam/lib56b/Adafruit GFX Library/Adafruit_GFX.cpp.o
+Compiling .pio/build/sim7000_psRam/lib56b/Adafruit GFX Library/Adafruit_GrayOLED.cpp.o
+Compiling .pio/build/sim7000_psRam/lib56b/Adafruit GFX Library/Adafruit_SPITFT.cpp.o
+Archiving .pio/build/sim7000_psRam/lib565/libAdafruit BusIO.a
+Indexing .pio/build/sim7000_psRam/lib565/libAdafruit BusIO.a
+Compiling .pio/build/sim7000_psRam/lib56b/Adafruit GFX Library/glcdfont.c.o
+Compiling .pio/build/sim7000_psRam/lib23c/RTClib/RTC_DS1307.cpp.o
+Compiling .pio/build/sim7000_psRam/lib23c/RTClib/RTC_DS3231.cpp.o
+Archiving .pio/build/sim7000_psRam/lib56b/libAdafruit GFX Library.a
+Compiling .pio/build/sim7000_psRam/lib23c/RTClib/RTC_Micros.cpp.o
+Compiling .pio/build/sim7000_psRam/lib23c/RTClib/RTC_Millis.cpp.o
+Indexing .pio/build/sim7000_psRam/lib56b/libAdafruit GFX Library.a
+Compiling .pio/build/sim7000_psRam/lib23c/RTClib/RTC_PCF8523.cpp.o
+Compiling .pio/build/sim7000_psRam/lib23c/RTClib/RTC_PCF8563.cpp.o
+Compiling .pio/build/sim7000_psRam/lib23c/RTClib/RTClib.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/ETH.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFi.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiAP.cpp.o
+Archiving .pio/build/sim7000_psRam/lib23c/libRTClib.a
+Indexing .pio/build/sim7000_psRam/lib23c/libRTClib.a
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiClient.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiGeneric.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiMulti.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiSTA.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiScan.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiServer.cpp.o
+Compiling .pio/build/sim7000_psRam/lib635/WiFi/WiFiUdp.cpp.o
+Compiling .pio/build/sim7000_psRam/lib99d/WiFiClientSecure/WiFiClientSecure.cpp.o
+Compiling .pio/build/sim7000_psRam/lib99d/WiFiClientSecure/ssl_client.cpp.o
+Archiving .pio/build/sim7000_psRam/lib635/libWiFi.a
+Indexing .pio/build/sim7000_psRam/lib635/libWiFi.a
+Compiling .pio/build/sim7000_psRam/liba51/WebSockets/SocketIOclient.cpp.o
+Compiling .pio/build/sim7000_psRam/liba51/WebSockets/WebSockets.cpp.o
+Compiling .pio/build/sim7000_psRam/liba51/WebSockets/WebSocketsClient.cpp.o
+Archiving .pio/build/sim7000_psRam/lib99d/libWiFiClientSecure.a
+Indexing .pio/build/sim7000_psRam/lib99d/libWiFiClientSecure.a
+Compiling .pio/build/sim7000_psRam/liba51/WebSockets/WebSocketsServer.cpp.o
+Compiling .pio/build/sim7000_psRam/liba51/WebSockets/libb64/cdecode.c.o
+Compiling .pio/build/sim7000_psRam/liba51/WebSockets/libb64/cencode.c.o
+Compiling .pio/build/sim7000_psRam/liba51/WebSockets/libsha1/libsha1.c.o
+Compiling .pio/build/sim7000_psRam/libaf2/NTPClient/NTPClient.cpp.o
+Compiling .pio/build/sim7000_psRam/libf88/tools/tools.cpp.o
+Compiling .pio/build/sim7000_psRam/libffd/PubSubClient-2.8.0/PubSubClient.cpp.o
+Archiving .pio/build/sim7000_psRam/libaf2/libNTPClient.a
+Indexing .pio/build/sim7000_psRam/libaf2/libNTPClient.a
+Compiling .pio/build/sim7000_psRam/libe21/Update/HttpsOTAUpdate.cpp.o
+Archiving .pio/build/sim7000_psRam/libf88/libtools.a
+Archiving .pio/build/sim7000_psRam/liba51/libWebSockets.a
+Indexing .pio/build/sim7000_psRam/libf88/libtools.a
+Indexing .pio/build/sim7000_psRam/liba51/libWebSockets.a
+Compiling .pio/build/sim7000_psRam/libe21/Update/Updater.cpp.o
+Compiling .pio/build/sim7000_psRam/libc2e/GxMqtt/GxMqtt.cpp.o
+Archiving .pio/build/sim7000_psRam/libffd/libPubSubClient-2.8.0.a
+Indexing .pio/build/sim7000_psRam/libffd/libPubSubClient-2.8.0.a
+Compiling .pio/build/sim7000_psRam/lib427/FS/FS.cpp.o
+Compiling .pio/build/sim7000_psRam/lib427/FS/vfs_api.cpp.o
+Archiving .pio/build/sim7000_psRam/libe21/libUpdate.a
+Indexing .pio/build/sim7000_psRam/libe21/libUpdate.a
+Compiling .pio/build/sim7000_psRam/lib284/XPowersLib/XPowersLibInterface.cpp.o
+Compiling .pio/build/sim7000_psRam/lib158/ArduinoHttpClient-master/HttpClient.cpp.o
+Archiving .pio/build/sim7000_psRam/lib284/libXPowersLib.a
+Indexing .pio/build/sim7000_psRam/lib284/libXPowersLib.a
+Compiling .pio/build/sim7000_psRam/lib158/ArduinoHttpClient-master/URLEncoder.cpp.o
+Archiving .pio/build/sim7000_psRam/lib427/libFS.a
+Indexing .pio/build/sim7000_psRam/lib427/libFS.a
+Compiling .pio/build/sim7000_psRam/lib158/ArduinoHttpClient-master/WebSocketClient.cpp.o
+Archiving .pio/build/sim7000_psRam/libc2e/libGxMqtt.a
+Indexing .pio/build/sim7000_psRam/libc2e/libGxMqtt.a
+Compiling .pio/build/sim7000_psRam/lib158/ArduinoHttpClient-master/b64.cpp.o
+Compiling .pio/build/sim7000_psRam/libb65/gxUpdater/gxUpdater.cpp.o
+Compiling .pio/build/sim7000_psRam/lib863/gxUserLed/gxUserLed.cpp.o
+Compiling .pio/build/sim7000_psRam/lib875/AceButton/ace_button/AceButton.cpp.o
+Archiving .pio/build/sim7000_psRam/lib158/libArduinoHttpClient-master.a
+Indexing .pio/build/sim7000_psRam/lib158/libArduinoHttpClient-master.a
+Compiling .pio/build/sim7000_psRam/lib875/AceButton/ace_button/ButtonConfig.cpp.o
+Archiving .pio/build/sim7000_psRam/libb65/libgxUpdater.a
+Indexing .pio/build/sim7000_psRam/libb65/libgxUpdater.a
+Compiling .pio/build/sim7000_psRam/lib875/AceButton/ace_button/EncodedButtonConfig.cpp.o
+Archiving .pio/build/sim7000_psRam/lib863/libgxUserLed.a
+Indexing .pio/build/sim7000_psRam/lib863/libgxUserLed.a
+Compiling .pio/build/sim7000_psRam/lib875/AceButton/ace_button/LadderButtonConfig.cpp.o
+Compiling .pio/build/sim7000_psRam/lib875/AceButton/ace_button/testing/EventTracker.cpp.o
+Compiling .pio/build/sim7000_psRam/lib4da/Arduino-Interpolation-master/InterpolationLib.cpp.o
+Compiling .pio/build/sim7000_psRam/lib613/I2Cdev/I2Cdev.cpp.o
+Compiling .pio/build/sim7000_psRam/lib9ff/MPU6050/MPU6050.cpp.o
+Archiving .pio/build/sim7000_psRam/lib875/libAceButton.a
+Indexing .pio/build/sim7000_psRam/lib875/libAceButton.a
+Compiling .pio/build/sim7000_psRam/lib17f/Adafruit_BME280/Adafruit_BME280.cpp.o
+Archiving .pio/build/sim7000_psRam/lib4da/libArduino-Interpolation-master.a
+Indexing .pio/build/sim7000_psRam/lib4da/libArduino-Interpolation-master.a
+Compiling .pio/build/sim7000_psRam/lib275/HMC5883L/HMC5883L.cpp.o
+Archiving .pio/build/sim7000_psRam/lib613/libI2Cdev.a
+Indexing .pio/build/sim7000_psRam/lib613/libI2Cdev.a
+Compiling .pio/build/sim7000_psRam/lib7f5/MS5611/MS5611.cpp.o
+Archiving .pio/build/sim7000_psRam/lib17f/libAdafruit_BME280.a
+Indexing .pio/build/sim7000_psRam/lib17f/libAdafruit_BME280.a
+Compiling .pio/build/sim7000_psRam/libd38/Preferences/Preferences.cpp.o
+Archiving .pio/build/sim7000_psRam/lib275/libHMC5883L.a
+Indexing .pio/build/sim7000_psRam/lib275/libHMC5883L.a
+Compiling .pio/build/sim7000_psRam/lib76f/kalmanvert/kalmanvert.cpp.o
+Archiving .pio/build/sim7000_psRam/lib7f5/libMS5611.a
+Indexing .pio/build/sim7000_psRam/lib7f5/libMS5611.a
+Compiling .pio/build/sim7000_psRam/lib537/Baro/Baro.cpp.o
+Archiving .pio/build/sim7000_psRam/lib9ff/libMPU6050.a
+Indexing .pio/build/sim7000_psRam/lib9ff/libMPU6050.a
+Archiving .pio/build/sim7000_psRam/libd38/libPreferences.a
+Indexing .pio/build/sim7000_psRam/libd38/libPreferences.a
+Compiling .pio/build/sim7000_psRam/libeab/Dusk2Dawn-master/Dusk2Dawn.cpp.o
+Compiling .pio/build/sim7000_psRam/lib5bc/CalcTools/CalcTools.cpp.o
+Archiving .pio/build/sim7000_psRam/lib76f/libkalmanvert.a
+Indexing .pio/build/sim7000_psRam/lib76f/libkalmanvert.a
+Compiling .pio/build/sim7000_psRam/lib28e/FLARM/FlarmDataPort.cpp.o
+Archiving .pio/build/sim7000_psRam/libeab/libDusk2Dawn-master.a
+Archiving .pio/build/sim7000_psRam/lib5bc/libCalcTools.a
+Indexing .pio/build/sim7000_psRam/libeab/libDusk2Dawn-master.a
+Indexing .pio/build/sim7000_psRam/lib5bc/libCalcTools.a
+Compiling .pio/build/sim7000_psRam/lib28e/FLARM/FlarmRadio.cpp.o
+Compiling .pio/build/sim7000_psRam/lib28e/FLARM/lib_crc.cpp.o
+Archiving .pio/build/sim7000_psRam/lib537/libBaro.a
+Compiling .pio/build/sim7000_psRam/lib550/Time/DateStrings.cpp.o
+Indexing .pio/build/sim7000_psRam/lib537/libBaro.a
+Compiling .pio/build/sim7000_psRam/lib550/Time/Time.cpp.o
+Compiling .pio/build/sim7000_psRam/lib829/FANETLORA/FanetLora.cpp.o
+Compiling .pio/build/sim7000_psRam/lib829/FANETLORA/radio/GxModule.cpp.o
+Archiving .pio/build/sim7000_psRam/lib550/libTime.a
+Archiving .pio/build/sim7000_psRam/lib28e/libFLARM.a
+Indexing .pio/build/sim7000_psRam/lib550/libTime.a
+Indexing .pio/build/sim7000_psRam/lib28e/libFLARM.a
+Compiling .pio/build/sim7000_psRam/lib829/FANETLORA/radio/LoRa.cpp.o
+Compiling .pio/build/sim7000_psRam/lib829/FANETLORA/radio/fmac.cpp.o
+Compiling .pio/build/sim7000_psRam/lib829/FANETLORA/radio/frame.cpp.o
+Compiling .pio/build/sim7000_psRam/lib829/FANETLORA/radio/lib/TimerObject.cpp.o
+Compiling .pio/build/sim7000_psRam/lib829/FANETLORA/radio/lib/random.cpp.o
+Compiling .pio/build/sim7000_psRam/lib9ea/MicroNMEA-master/MicroNMEA.cpp.o
+Compiling .pio/build/sim7000_psRam/libbcf/OGN/Ogn.cpp.o
+Compiling .pio/build/sim7000_psRam/lib8fc/SD/SD.cpp.o
+Archiving .pio/build/sim7000_psRam/lib829/libFANETLORA.a
+Indexing .pio/build/sim7000_psRam/lib829/libFANETLORA.a
+Compiling .pio/build/sim7000_psRam/lib8fc/SD/sd_diskio.cpp.o
+Archiving .pio/build/sim7000_psRam/lib9ea/libMicroNMEA-master.a
+Indexing .pio/build/sim7000_psRam/lib9ea/libMicroNMEA-master.a
+Compiling .pio/build/sim7000_psRam/lib8fc/SD/sd_diskio_crc.c.o
+Compiling .pio/build/sim7000_psRam/libdd5/SPIFFS/SPIFFS.cpp.o
+Compiling .pio/build/sim7000_psRam/lib115/SparkFun_u-blox_GNSS_Arduino_Library-2.2.24/SparkFun_u-blox_GNSS_Arduino_Library.cpp.o
+Archiving .pio/build/sim7000_psRam/libbcf/libOGN.a
+Indexing .pio/build/sim7000_psRam/libbcf/libOGN.a
+Compiling .pio/build/sim7000_psRam/lib7a4/ADS1X15-0.3.8/ADS1X15.cpp.o
+Archiving .pio/build/sim7000_psRam/libdd5/libSPIFFS.a
+Indexing .pio/build/sim7000_psRam/libdd5/libSPIFFS.a
+Compiling .pio/build/sim7000_psRam/lib300/Arduino-Temperature-Control-Library/DallasTemperature.cpp.o
+Archiving .pio/build/sim7000_psRam/lib8fc/libSD.a
+Indexing .pio/build/sim7000_psRam/lib8fc/libSD.a
+Compiling .pio/build/sim7000_psRam/lib0be/Weather/PeetBros.cpp.o
+Archiving .pio/build/sim7000_psRam/lib7a4/libADS1X15-0.3.8.a
+Indexing .pio/build/sim7000_psRam/lib7a4/libADS1X15-0.3.8.a
+Compiling .pio/build/sim7000_psRam/lib0be/Weather/Tx20.cpp.o
+Compiling .pio/build/sim7000_psRam/lib0be/Weather/Weather.cpp.o
+Archiving .pio/build/sim7000_psRam/lib300/libArduino-Temperature-Control-Library.a
+Indexing .pio/build/sim7000_psRam/lib300/libArduino-Temperature-Control-Library.a
+Compiling .pio/build/sim7000_psRam/lib7ec/WeatherUnderground/WeatherUnderground.cpp.o
+Compiling .pio/build/sim7000_psRam/lib551/Windy/Windy.cpp.o
+Archiving .pio/build/sim7000_psRam/lib0be/libWeather.a
+Indexing .pio/build/sim7000_psRam/lib0be/libWeather.a
+Compiling .pio/build/sim7000_psRam/libccc/LPtoneAC/toneAC.cpp.o
+Archiving .pio/build/sim7000_psRam/libccc/libLPtoneAC.a
+Indexing .pio/build/sim7000_psRam/libccc/libLPtoneAC.a
+Compiling .pio/build/sim7000_psRam/lib400/beeper/beeper.cpp.o
+Archiving .pio/build/sim7000_psRam/lib551/libWindy.a
+Indexing .pio/build/sim7000_psRam/lib551/libWindy.a
+Compiling .pio/build/sim7000_psRam/lib50f/SD_MMC/SD_MMC.cpp.o
+Archiving .pio/build/sim7000_psRam/lib7ec/libWeatherUnderground.a
+Indexing .pio/build/sim7000_psRam/lib7ec/libWeatherUnderground.a
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/GxEPD2_EPD.cpp.o
+Archiving .pio/build/sim7000_psRam/lib400/libbeeper.a
+Indexing .pio/build/sim7000_psRam/lib400/libbeeper.a
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/GxEPD2_EPD_orig.cpp.o
+Archiving .pio/build/sim7000_psRam/lib50f/libSD_MMC.a
+Indexing .pio/build/sim7000_psRam/lib50f/libSD_MMC.a
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_102.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_1160_T91.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_1248.cpp.o
+Archiving .pio/build/sim7000_psRam/lib115/libSparkFun_u-blox_GNSS_Arduino_Library-2.2.24.a
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_154.cpp.o
+Indexing .pio/build/sim7000_psRam/lib115/libSparkFun_u-blox_GNSS_Arduino_Library-2.2.24.a
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_154_D67.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_154_M09.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_154_M10.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_154_T8.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_213.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_213_B72.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_213_B73.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_213_B74.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_213_M21.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_213_T5D.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_213_flex.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_260.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_260_M01.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_270.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_290.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_290_I6FD.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_290_M06.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T5.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T5D.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T94.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_290_T94_V2.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_371.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_420.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_420_M01.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_583.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_583_T8.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_750.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd/GxEPD2_750_T7.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_154_Z90c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_154c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_213_Z19c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_213c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_270c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_290_C90c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_290_Z13c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_290c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_420c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_420c_Z21.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_565c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_583c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c_Z08.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/epd3c/GxEPD2_750c_Z90.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/it8951/GxEPD2_it60.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/it8951/GxEPD2_it60_1448x1072.cpp.o
+Compiling .pio/build/sim7000_psRam/liba32/GxEPD2-master/it8951/GxEPD2_it78_1872x1404.cpp.o
+Compiling .pio/build/sim7000_psRam/lib99d/AsyncTCP-master/AsyncTCP.cpp.o
+Archiving .pio/build/sim7000_psRam/liba32/libGxEPD2-master.a
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/AsyncEventSource.cpp.o
+Indexing .pio/build/sim7000_psRam/liba32/libGxEPD2-master.a
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/AsyncWebSocket.cpp.o
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/SPIFFSEditor.cpp.o
+Archiving .pio/build/sim7000_psRam/lib99d/libAsyncTCP-master.a
+Indexing .pio/build/sim7000_psRam/lib99d/libAsyncTCP-master.a
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/WebAuthentication.cpp.o
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/WebHandlers.cpp.o
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/WebRequest.cpp.o
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/WebResponses.cpp.o
+Compiling .pio/build/sim7000_psRam/lib3e5/ESPAsyncWebServer-master/WebServer.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLE2902.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLE2904.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEAddress.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEAdvertisedDevice.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEAdvertising.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEBeacon.cpp.o
+Archiving .pio/build/sim7000_psRam/lib3e5/libESPAsyncWebServer-master.a
+Indexing .pio/build/sim7000_psRam/lib3e5/libESPAsyncWebServer-master.a
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLECharacteristic.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLECharacteristicMap.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEClient.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEDescriptor.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEDescriptorMap.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEDevice.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEEddystoneTLM.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEEddystoneURL.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEExceptions.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEHIDDevice.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLERemoteCharacteristic.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLERemoteDescriptor.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLERemoteService.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEScan.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLESecurity.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEServer.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEService.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEServiceMap.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEUUID.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEUtils.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/BLEValue.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/FreeRTOS.cpp.o
+Compiling .pio/build/sim7000_psRam/lib154/BLE/GeneralUtils.cpp.o
+Compiling .pio/build/sim7000_psRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH1106G.cpp.o
+Compiling .pio/build/sim7000_psRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH1107.cpp.o
+Compiling .pio/build/sim7000_psRam/lib23a/Adafruit_SH110x-2.1.9/Adafruit_SH110X.cpp.o
+Compiling .pio/build/sim7000_psRam/lib4aa/Adafruit_SSD1306-master/Adafruit_SSD1306.cpp.o
+Archiving .pio/build/sim7000_psRam/lib154/libBLE.a
+Indexing .pio/build/sim7000_psRam/lib154/libBLE.a
+Archiving .pio/build/sim7000_psRam/libFrameworkArduinoVariant.a
+Indexing .pio/build/sim7000_psRam/libFrameworkArduinoVariant.a
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/Esp.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/FunctionalInterrupt.cpp.o
+Archiving .pio/build/sim7000_psRam/lib23a/libAdafruit_SH110x-2.1.9.a
+Indexing .pio/build/sim7000_psRam/lib23a/libAdafruit_SH110x-2.1.9.a
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/HardwareSerial.cpp.o
+Archiving .pio/build/sim7000_psRam/lib4aa/libAdafruit_SSD1306-master.a
+Indexing .pio/build/sim7000_psRam/lib4aa/libAdafruit_SSD1306-master.a
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/IPAddress.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/IPv6Address.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/MD5Builder.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/Print.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/Stream.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/StreamString.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/WMath.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/WString.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/base64.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/cbuf.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-adc.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-bt.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-cpu.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-dac.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-gpio.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-i2c.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-ledc.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-log.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-matrix.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-misc.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-psram.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-rmt.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-sigmadelta.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-spi.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-time.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-timer.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-touch.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/esp32-hal-uart.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/libb64/cdecode.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/libb64/cencode.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/main.cpp.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/stdlib_noniso.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/wiring_pulse.c.o
+Compiling .pio/build/sim7000_psRam/FrameworkArduino/wiring_shift.c.o
+Archiving .pio/build/sim7000_psRam/libFrameworkArduino.a
+Indexing .pio/build/sim7000_psRam/libFrameworkArduino.a
+Linking .pio/build/sim7000_psRam/firmware.elf
+Retrieving maximum program size .pio/build/sim7000_psRam/firmware.elf
+Checking size .pio/build/sim7000_psRam/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  23.1% (used 75832 bytes from 327680 bytes)
+Flash: [==========]  95.4% (used 1875846 bytes from 1966080 bytes)
+Building .pio/build/sim7000_psRam/firmware.bin
+esptool.py v3.1
+Merged 1 ELF section
+copy_file([".pio/build/sim7000_psRam/firmware.bin"], [".pio/build/sim7000_psRam/firmware.elf"])
+Copying file output to project directory...
+firmware.bin
+sim7000_psRam
+build
+v7.1.0
+********  copy file .pio/build/sim7000_psRam/firmware.bin to bin/sim7000_psRam/v7.1.0/firmware.bin *******
+********  copy file bin/bootloader_dio_40m.bin to bin/sim7000_psRam/v7.1.0/bootloader.bin *******
+Done.
+======================== [SUCCESS] Took 143.78 seconds ========================
+
+Processing T-Beam-S3Core (board: esp32-s3-devkitc-1; platform: espressif32 @ 6.7.0; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-s3-devkitc-1.html
+PLATFORM: Espressif 32 (6.7.0) > Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)
+HARDWARE: ESP32S3 240MHz, 320KB RAM, 8MB Flash
+DEBUG: Current (esp-builtin) On-board (esp-builtin) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20016.0 (2.0.16) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-riscv32-esp @ 8.4.0+2021r2-patch5 
+ - toolchain-xtensa-esp32s3 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 83 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 2.0.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD @ 2.0.0
+|-- SPI @ 2.0.0
+|-- SPIFFS @ 2.0.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 2.0.0
+|-- Windy
+|-- Wire @ 2.0.0
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 2.0.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 2.0.0
+|-- Preferences @ 2.0.0
+|-- ESP32 BLE Arduino @ 2.0.0
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Retrieving maximum program size .pio/build/T-Beam-S3Core/firmware.elf
+Checking size .pio/build/T-Beam-S3Core/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  21.3% (used 69848 bytes from 327680 bytes)
+Flash: [====      ]  36.1% (used 1468021 bytes from 4063232 bytes)
+========================= [SUCCESS] Took 24.42 seconds =========================
+
+Processing Gs (platform: espressif32 @ 6.7.0; framework: arduino; board: esp32dev)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.7.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20016.0 (2.0.16) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 83 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 2.0.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD @ 2.0.0
+|-- SPI @ 2.0.0
+|-- SPIFFS @ 2.0.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 2.0.0
+|-- Windy
+|-- Wire @ 2.0.0
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 2.0.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 2.0.0
+|-- Preferences @ 2.0.0
+|-- ESP32 BLE Arduino @ 2.0.0
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Retrieving maximum program size .pio/build/Gs/firmware.elf
+Checking size .pio/build/Gs/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  20.5% (used 67228 bytes from 327680 bytes)
+Flash: [=======   ]  74.2% (used 1457985 bytes from 1966080 bytes)
+========================= [SUCCESS] Took 23.77 seconds =========================
+
+Processing GsSim7000 (platform: espressif32 @ 6.7.0; framework: arduino; board: esp32dev)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.7.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20016.0 (2.0.16) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 83 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 2.0.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD @ 2.0.0
+|-- SPI @ 2.0.0
+|-- SPIFFS @ 2.0.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 2.0.0
+|-- Windy
+|-- Wire @ 2.0.0
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 2.0.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 2.0.0
+|-- Preferences @ 2.0.0
+|-- ESP32 BLE Arduino @ 2.0.0
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Retrieving maximum program size .pio/build/GsSim7000/firmware.elf
+Checking size .pio/build/GsSim7000/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  21.0% (used 68756 bytes from 327680 bytes)
+Flash: [=======   ]  75.0% (used 1473753 bytes from 1966080 bytes)
+========================= [SUCCESS] Took 23.88 seconds =========================
+
+Processing wireless-StickV3 (board: esp32-s3-devkitc-1; platform: espressif32 @ 6.7.0; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-s3-devkitc-1.html
+PLATFORM: Espressif 32 (6.7.0) > Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)
+HARDWARE: ESP32S3 240MHz, 320KB RAM, 8MB Flash
+DEBUG: Current (esp-builtin) On-board (esp-builtin) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20016.0 (2.0.16) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-riscv32-esp @ 8.4.0+2021r2-patch5 
+ - toolchain-xtensa-esp32s3 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 83 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 2.0.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD @ 2.0.0
+|-- SPI @ 2.0.0
+|-- SPIFFS @ 2.0.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 2.0.0
+|-- Windy
+|-- Wire @ 2.0.0
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 2.0.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 2.0.0
+|-- Preferences @ 2.0.0
+|-- ESP32 BLE Arduino @ 2.0.0
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Retrieving maximum program size .pio/build/wireless-StickV3/firmware.elf
+Checking size .pio/build/wireless-StickV3/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [===       ]  26.7% (used 87340 bytes from 327680 bytes)
+Flash: [=====     ]  47.9% (used 1946085 bytes from 4063232 bytes)
+========================= [SUCCESS] Took 23.72 seconds =========================
+
+Processing Heltec_Lora_V3 (board: esp32-s3-devkitc-1; platform: espressif32 @ 6.7.0; framework: arduino)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32-s3-devkitc-1.html
+PLATFORM: Espressif 32 (6.7.0) > Espressif ESP32-S3-DevKitC-1-N8 (8 MB QD, No PSRAM)
+HARDWARE: ESP32S3 240MHz, 320KB RAM, 8MB Flash
+DEBUG: Current (esp-builtin) On-board (esp-builtin) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20016.0 (2.0.16) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-riscv32-esp @ 8.4.0+2021r2-patch5 
+ - toolchain-xtensa-esp32s3 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 83 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 2.0.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD @ 2.0.0
+|-- SPI @ 2.0.0
+|-- SPIFFS @ 2.0.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 2.0.0
+|-- Windy
+|-- Wire @ 2.0.0
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 2.0.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 2.0.0
+|-- Preferences @ 2.0.0
+|-- ESP32 BLE Arduino @ 2.0.0
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Retrieving maximum program size .pio/build/Heltec_Lora_V3/firmware.elf
+Checking size .pio/build/Heltec_Lora_V3/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  19.6% (used 64308 bytes from 327680 bytes)
+Flash: [===       ]  33.0% (used 1342621 bytes from 4063232 bytes)
+========================= [SUCCESS] Took 23.72 seconds =========================
+
+Processing flarmLogger (platform: espressif32 @ 6.7.0; framework: arduino; board: esp32dev)
+--------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+CONFIGURATION: https://docs.platformio.org/page/boards/espressif32/esp32dev.html
+PLATFORM: Espressif 32 (6.7.0) > Espressif ESP32 Dev Module
+HARDWARE: ESP32 240MHz, 320KB RAM, 4MB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, esp-bridge, esp-prog, iot-bus-jtag, jlink, minimodule, olimex-arm-usb-ocd, olimex-arm-usb-ocd-h, olimex-arm-usb-tiny-h, olimex-jtag-tiny, tumpa)
+PACKAGES: 
+ - framework-arduinoespressif32 @ 3.20016.0 (2.0.16) 
+ - tool-esptoolpy @ 1.40501.0 (4.5.1) 
+ - toolchain-xtensa-esp32 @ 8.4.0+2021r2-patch5
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 83 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- NimBLE-Arduino @ 1.4.3
+|-- OneWire @ 2.3.8
+|-- Adafruit GFX Library @ 1.11.11
+|-- RTClib @ 2.1.4
+|-- WebSockets @ 2.3.7
+|-- NTPClient @ 3.2.1
+|-- tools
+|-- GxMqtt
+|-- FS @ 2.0.0
+|-- XPowersLib @ 0.1.6
+|-- gxUpdater
+|-- gxUserLed
+|-- AceButton @ 1.8.2
+|-- ArduinoHttpClient
+|-- ArduinoJson @ 6.15.2
+|-- Baro
+|-- Dusk2Dawn @ 1.0.1
+|-- FANETLORA
+|-- FLARM
+|-- MicroNMEA @ 2.0.1
+|-- OGN
+|-- SD @ 2.0.0
+|-- SPI @ 2.0.0
+|-- SPIFFS @ 2.0.0
+|-- SparkFun u-blox GNSS Arduino Library @ 2.2.24
+|-- StreamDebugger @ 1.0.1
+|-- Time
+|-- TinyGSM @ 0.11.4
+|-- Weather
+|-- WeatherUnderground
+|-- WiFi @ 2.0.0
+|-- Windy
+|-- Wire @ 2.0.0
+|-- beeper
+|-- LPtoneAC
+|-- SD_MMC @ 2.0.0
+|-- GxEPD2 @ 1.3.9
+|-- CalcTools
+|-- ESP Async WebServer @ 1.2.3
+|-- Update @ 2.0.0
+|-- Preferences @ 2.0.0
+|-- ESP32 BLE Arduino @ 2.0.0
+|-- Adafruit SH110X @ 2.1.8
+|-- Adafruit SSD1306 @ 2.2.0
+Building in release mode
+Retrieving maximum program size .pio/build/flarmLogger/firmware.elf
+Checking size .pio/build/flarmLogger/firmware.elf
+Advanced Memory Usage is available via "PlatformIO Home > Project Inspect"
+RAM:   [==        ]  20.8% (used 68036 bytes from 327680 bytes)
+Flash: [========  ]  78.1% (used 1535037 bytes from 1966080 bytes)
+========================= [SUCCESS] Took 22.92 seconds =========================
+
+Environment       Status    Duration
+----------------  --------  ------------
+psRam             SUCCESS   00:01:59.696
+nopsRam           SUCCESS   00:02:17.720
+sim7000_psRam     SUCCESS   00:02:23.777
+T-Beam-S3Core     SUCCESS   00:00:24.425
+Gs                SUCCESS   00:00:23.770
+GsSim7000         SUCCESS   00:00:23.880
+wireless-StickV3  SUCCESS   00:00:23.722
+Heltec_Lora_V3    SUCCESS   00:00:23.716
+flarmLogger       SUCCESS   00:00:22.916
+========================= 9 succeeded in 00:09:03.622 =========================
